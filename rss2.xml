@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Lion&#39;s Red Mane</title>
+    <link>http://rimij405.github.io/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>An exploration of thought, code architecture, open source culture, design, development, and more.</description>
+    <pubDate>Wed, 23 Jan 2019 06:34:00 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Next Steps</title>
+      <link>http://rimij405.github.io/blog/hfoss/next-steps/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/next-steps/</guid>
+      <pubDate>Tue, 22 Jan 2019 06:06:33 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;The-Way-It-Goes&quot;&gt;&lt;a href=&quot;#The-Way-It-Goes&quot; class=&quot;headerlink&quot; title=&quot;The Way It Goes&quot;&gt;&lt;/a&gt;The Way It Goes&lt;/h1&gt;&lt;p&gt;I recently read &lt;a href=&quot;https://dev.to/dechamp/25-years-of-coding-and-im-just-beginning-442n&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;25 years of coding, and I’m just beginning&lt;/a&gt; by dev.to user DeChamp, and found some intriguing responses across the web. One particular &lt;a href=&quot;https://www.pskirko.com/2019/01/20/re-25-years-of-coding/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Re:&lt;/a&gt; came from &lt;a href=&quot;https://www.pskirko.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Peter Skirko&lt;/a&gt;. Rather than read back the very relatable thoughts and ideas they both covered, as pertains to development, I thought I’d begin with it to share where my mental state has recently turned to.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/next-steps/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>It Started With a Bang!</title>
+      <link>http://rimij405.github.io/blog/hfoss/hello-world/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/hello-world/</guid>
+      <pubDate>Sun, 20 Jan 2019 23:36:58 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;It-Started-With-a-BANG&quot;&gt;&lt;a href=&quot;#It-Started-With-a-BANG&quot; class=&quot;headerlink&quot; title=&quot;It Started With a BANG!&quot;&gt;&lt;/a&gt;It Started With a BANG!&lt;/h1&gt;&lt;p&gt;At least, I wish creating a personal website was as cinematic and bombastic as a Michael Bay-directed Transformers film. Alas, as with most projects, it takes a little bit of research to know what we’re getting into. Let’s take a look at how this site was made, shall we?&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/hello-world/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
