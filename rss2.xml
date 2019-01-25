@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>An exploration of thought, code architecture, open source culture, design, development, and more.</description>
-    <pubDate>Wed, 23 Jan 2019 06:34:00 GMT</pubDate>
+    <pubDate>Fri, 25 Jan 2019 04:05:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Mission: Authentication</title>
+      <link>http://rimij405.github.io/blog/cybersecurity/mission-authentication/</link>
+      <guid>http://rimij405.github.io/blog/cybersecurity/mission-authentication/</guid>
+      <pubDate>Fri, 25 Jan 2019 03:09:42 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Mission-Authentication&quot;&gt;&lt;a href=&quot;#Mission-Authentication&quot; class=&quot;headerlink&quot; title=&quot;Mission: Authentication&quot;&gt;&lt;/a&gt;Mission:
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/cybersecurity/mission-authentication/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Next Steps</title>
