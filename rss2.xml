@@ -8,8 +8,205 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>An exploration of thought, code architecture, open source culture, design, development, and more.</description>
-    <pubDate>Fri, 25 Jan 2019 04:05:56 GMT</pubDate>
+    <pubDate>Fri, 22 Mar 2019 05:29:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Community Archictecture Analysis: KDevelop</title>
+      <link>http://rimij405.github.io/blog/hfoss/commarchreport/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/commarchreport/</guid>
+      <pubDate>Fri, 22 Mar 2019 03:43:55 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Community-Architecture-Analysis&quot;&gt;&lt;a href=&quot;#Community-Architecture-Analysis&quot; class=&quot;headerlink&quot; title=&quot;Community Architecture
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/commarchreport/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Quicklook: SONY&#39;s Open Source Surprise - OpenColorIO</title>
+      <link>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</guid>
+      <pubDate>Wed, 20 Mar 2019 08:46:02 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Sony’s-OpenColorIO&quot;&gt;&lt;a href=&quot;#Sony’s-OpenColorIO&quot; class=&quot;headerlink&quot; title=&quot;Sony’s OpenColorIO&quot;&gt;&lt;/a&gt;Sony’s OpenColorIO&lt;/h1&gt;&lt;p&gt;Sony
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Read It! The Architecture of Open Source Applications</title>
+      <link>http://rimij405.github.io/blog/hfoss/reading-oss-arch/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/reading-oss-arch/</guid>
+      <pubDate>Wed, 20 Mar 2019 08:24:11 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;The-Architecture-of-Open-Source-Applications&quot;&gt;&lt;a href=&quot;#The-Architecture-of-Open-Source-Applications&quot; class=&quot;headerlink&quot; title=&quot;The
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/reading-oss-arch/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Literature Review #3: NYS Next Generation Mathematics Learning Standards</title>
+      <link>http://rimij405.github.io/blog/hfoss/lit-review-3/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/lit-review-3/</guid>
+      <pubDate>Wed, 20 Mar 2019 07:32:31 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;Review-NYS-Next-Generation-Mathematics-Learning-Standards&quot;&gt;&lt;a href=&quot;#Review-NYS-Next-Generation-Mathematics-Learning-Standards&quot; class=&quot;headerlink&quot; title=&quot;Review: NYS Next Generation Mathematics Learning Standards&quot;&gt;&lt;/a&gt;Review: NYS Next Generation Mathematics Learning Standards&lt;/h1&gt;&lt;p&gt;In this literature review, HFOSS students were asked to review the education standards for New York State’s mathematics curriculae. This is in preparation for our final project.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/lit-review-3/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Community Archictecture Analysis: Team Proposal</title>
+      <link>http://rimij405.github.io/blog/hfoss/commarchteam/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/commarchteam/</guid>
+      <pubDate>Wed, 20 Mar 2019 05:52:05 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Team-Proposal&quot;&gt;&lt;a href=&quot;#Team-Proposal&quot; class=&quot;headerlink&quot; title=&quot;Team Proposal&quot;&gt;&lt;/a&gt;Team Proposal&lt;/h1&gt;&lt;p&gt;This blog post serves as
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/commarchteam/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>HFOSS - Quiz 1</title>
+      <link>http://rimij405.github.io/blog/quiz-1/</link>
+      <guid>http://rimij405.github.io/blog/quiz-1/</guid>
+      <pubDate>Fri, 08 Mar 2019 14:20:14 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Quiz-1&quot;&gt;&lt;a href=&quot;#Quiz-1&quot; class=&quot;headerlink&quot; title=&quot;Quiz 1&quot;&gt;&lt;/a&gt;Quiz 1&lt;/h1&gt;&lt;h2 id=&quot;Short-Answer&quot;&gt;&lt;a href=&quot;#Short-Answer&quot;
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/quiz-1/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Literature Review #2: Roads and Bridges</title>
+      <link>http://rimij405.github.io/blog/hfoss/lit-review-2/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/lit-review-2/</guid>
+      <pubDate>Mon, 18 Feb 2019 03:16:03 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure&quot;&gt;&lt;a href=&quot;#Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure&quot; class=&quot;headerlink&quot; title=&quot;Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&quot;&gt;&lt;/a&gt;Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/h1&gt;&lt;p&gt;This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&quot;https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/a&gt;&lt;/em&gt; by &lt;a href=&quot;https://nadiaeghbal.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Nadia Eghbal&lt;/a&gt;.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/lit-review-2/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Meetup: BrickHack V</title>
+      <link>http://rimij405.github.io/blog/hfoss/brickhack-v/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/brickhack-v/</guid>
+      <pubDate>Sun, 17 Feb 2019 17:02:02 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;BrickHack-V&quot;&gt;&lt;a href=&quot;#BrickHack-V&quot; class=&quot;headerlink&quot; title=&quot;BrickHack V&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://brickhackv.devpost.com/&quot;
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/brickhack-v/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Waiting for Godot</title>
+      <link>http://rimij405.github.io/blog/hfoss/waiting-for-godot/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/waiting-for-godot/</guid>
+      <pubDate>Tue, 05 Feb 2019 08:38:25 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;Waiting-for-Godot&quot;&gt;&lt;a href=&quot;#Waiting-for-Godot&quot; class=&quot;headerlink&quot; title=&quot;Waiting for Godot&quot;&gt;&lt;/a&gt;Waiting for Godot&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/waiting-for-godot/godot/logo_512px.png&quot; alt=&quot;Godot Logo.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This week I’m working with &lt;a href=&quot;https://godotengine.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Godot&lt;/a&gt;, a free and open source cross-platform game engine released under the very permissive &lt;a href=&quot;https://opensource.org/licenses/MIT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MIT license&lt;/a&gt;. Let’s get to it.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/waiting-for-godot/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Literature Review #1: Bug Reporting</title>
+      <link>http://rimij405.github.io/blog/hfoss/lit-review-1/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/lit-review-1/</guid>
+      <pubDate>Thu, 31 Jan 2019 03:16:03 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;Review-How-to-Report-Bugs-Effectively&quot;&gt;&lt;a href=&quot;#Review-How-to-Report-Bugs-Effectively&quot; class=&quot;headerlink&quot; title=&quot;Review: How to Report Bugs Effectively&quot;&gt;&lt;/a&gt;Review: How to Report Bugs Effectively&lt;/h1&gt;&lt;p&gt;This is the first of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&quot;https://www.chiark.greenend.org.uk/~sgtatham/bugs.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Report Bugs Effectively&lt;/a&gt;&lt;/em&gt; by &lt;a href=&quot;https://www.chiark.greenend.org.uk/~sgtatham/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Simon Tatham&lt;/a&gt;.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/lit-review-1/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Meetup: Global Game Jam 2019</title>
+      <link>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/</link>
+      <guid>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/</guid>
+      <pubDate>Wed, 30 Jan 2019 17:01:49 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Global-Game-Jam-2019&quot;&gt;&lt;a href=&quot;#Global-Game-Jam-2019&quot; class=&quot;headerlink&quot; title=&quot;Global Game Jam 2019&quot;&gt;&lt;/a&gt;&lt;a
+          
+        
+      
+      </description>
+      
+      <comments>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Mission: Authentication</title>
@@ -18,13 +215,12 @@
       <pubDate>Fri, 25 Jan 2019 03:09:42 GMT</pubDate>
       <description>
       
-        
-        
-          
-          
-            &lt;h1 id=&quot;Mission-Authentication&quot;&gt;&lt;a href=&quot;#Mission-Authentication&quot; class=&quot;headerlink&quot; title=&quot;Mission: Authentication&quot;&gt;&lt;/a&gt;Mission:
-          
-        
+        &lt;h1 id=&quot;Mission-Authentication&quot;&gt;&lt;a href=&quot;#Mission-Authentication&quot; class=&quot;headerlink&quot; title=&quot;Mission: Authentication&quot;&gt;&lt;/a&gt;Mission: Authentication&lt;/h1&gt;&lt;p&gt;Today’s little server-side experimentation dealt with ssh security and authentication. I’ll admit, I’ve been logging into my personal server using a password.&lt;/p&gt;
+&lt;p&gt;Before we dive into it, as a &lt;strong&gt;disclaimer&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;I am in no way a cryptologist, cryptographer, or security expert. The material written here was taken from around the web, and, as all things, is subject to human error.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That &lt;a href=&quot;https://simple.wikipedia.org/wiki/Cleartext&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;cleartext&lt;/a&gt; security information has been passing through my tunnels ever since I started working on that server. It was simply time to move one step up in the world of authentication - it was time to use some &lt;em&gt;cryptography&lt;/em&gt;.&lt;/p&gt;
       
       </description>
       
@@ -49,7 +245,7 @@
       <title>It Started With a Bang!</title>
       <link>http://rimij405.github.io/blog/hfoss/hello-world/</link>
       <guid>http://rimij405.github.io/blog/hfoss/hello-world/</guid>
-      <pubDate>Sun, 20 Jan 2019 23:36:58 GMT</pubDate>
+      <pubDate>Mon, 21 Jan 2019 06:06:33 GMT</pubDate>
       <description>
       
         &lt;h1 id=&quot;It-Started-With-a-BANG&quot;&gt;&lt;a href=&quot;#It-Started-With-a-BANG&quot; class=&quot;headerlink&quot; title=&quot;It Started With a BANG&quot;&gt;&lt;/a&gt;It Started With a BANG&lt;/h1&gt;&lt;p&gt;At least, I wish creating a personal website was as cinematic and bombastic as a Michael Bay-directed Transformers film. Alas, as with most projects, it takes a little bit of research to know what we’re getting into. Let’s take a look at how this site was made, shall we?&lt;/p&gt;

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Team ProposalThis blog post serves as a proposal for the community architecture analysis of KDEvelop. Team Members Nic Hartley nxh9052@rit.edu  Joshua Schenk  jks7743@rit.edu  Ian Effendi  iae2784@rit">
+<meta name="keywords" content="open-source,class,architecture,documentation,analysis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Community Archictecture Analysis: Team Proposal">
+<meta property="og:url" content="http://rimij405.github.io/blog/hfoss/commarchteam/index.html">
+<meta property="og:site_name" content="The Lion&#39;s Red Mane">
+<meta property="og:description" content="Team ProposalThis blog post serves as a proposal for the community architecture analysis of KDEvelop. Team Members Nic Hartley nxh9052@rit.edu  Joshua Schenk  jks7743@rit.edu  Ian Effendi  iae2784@rit">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-03-22T03:36:53.400Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Community Archictecture Analysis: Team Proposal">
+<meta name="twitter:description" content="Team ProposalThis blog post serves as a proposal for the community architecture analysis of KDEvelop. Team Members Nic Hartley nxh9052@rit.edu  Joshua Schenk  jks7743@rit.edu  Ian Effendi  iae2784@rit">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Community Archictecture Analysis: Team Proposal</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="http://github.com/rimij405">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/blog/hfoss/lit-review-3/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/blog/quiz-1/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://rimij405.github.io/blog/hfoss/commarchteam/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://rimij405.github.io/blog/hfoss/commarchteam/&text=Community Archictecture Analysis: Team Proposal"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://rimij405.github.io/blog/hfoss/commarchteam/&is_video=false&description=Community Archictecture Analysis: Team Proposal"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Community Archictecture Analysis: Team Proposal&body=Check out this article: http://rimij405.github.io/blog/hfoss/commarchteam/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://rimij405.github.io/blog/hfoss/commarchteam/&name=Community Archictecture Analysis: Team Proposal&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Team-Proposal"><span class="toc-number">1.</span> <span class="toc-text">Team Proposal</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Team-Members"><span class="toc-number">1.1.</span> <span class="toc-text">Team Members</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Project"><span class="toc-number">1.2.</span> <span class="toc-text">Project</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Division-of-Labor"><span class="toc-number">1.3.</span> <span class="toc-text">Division of Labor</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Nic-Hartley"><span class="toc-number">1.3.1.</span> <span class="toc-text">Nic Hartley</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Joshua-Schenk"><span class="toc-number">1.3.2.</span> <span class="toc-text">Joshua Schenk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ian-Effendi"><span class="toc-number">1.3.3.</span> <span class="toc-text">Ian Effendi</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Important-Links"><span class="toc-number">1.4.</span> <span class="toc-text">Important Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-will-you-communicate-with-them-i-e-IRC-Channel-Email-Address-mail-lists-issue-trackers-etc…"><span class="toc-number">1.5.</span> <span class="toc-text">How will you communicate with them? (i.e. IRC Channel, Email Address, mail lists, issue trackers, etc…)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Upstream-Contributor-Mentors"><span class="toc-number">1.6.</span> <span class="toc-text">Upstream / Contributor Mentors</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Core-Developers"><span class="toc-number">1.6.1.</span> <span class="toc-text">Core Developers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Active-Contributors"><span class="toc-number">1.6.2.</span> <span class="toc-text">Active Contributors</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#On-Challenges"><span class="toc-number">1.7.</span> <span class="toc-text">On Challenges</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#What-are-the-easy-parts"><span class="toc-number">1.7.1.</span> <span class="toc-text">What are the easy parts?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#What-are-the-hard-parts"><span class="toc-number">1.7.2.</span> <span class="toc-text">What are the hard parts?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-will-you-overcome-both"><span class="toc-number">1.7.3.</span> <span class="toc-text">How will you overcome both?</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Community Archictecture Analysis: Team Proposal
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">The Lion's Red Mane</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-03-20T05:52:05.000Z" itemprop="datePublished">2019-03-20</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/analysis/">analysis</a>, <a class="tag-link" href="/tags/architecture/">architecture</a>, <a class="tag-link" href="/tags/class/">class</a>, <a class="tag-link" href="/tags/documentation/">documentation</a>, <a class="tag-link" href="/tags/open-source/">open-source</a>
+    </div>
+
+
+      <span itemprop="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Team-Proposal"><a href="#Team-Proposal" class="headerlink" title="Team Proposal"></a>Team Proposal</h1><p>This blog post serves as a proposal for the community architecture analysis of KDEvelop.</p>
+<h2 id="Team-Members"><a href="#Team-Members" class="headerlink" title="Team Members"></a>Team Members</h2><ul>
+<li>Nic Hartley</li>
+<li><p><a href="mailto:nxh9052@rit.edu" target="_blank" rel="noopener">nxh9052@rit.edu</a></p>
+</li>
+<li><p>Joshua Schenk</p>
+</li>
+<li><p><a href="mailto:jks7743@rit.edu" target="_blank" rel="noopener">jks7743@rit.edu</a></p>
+</li>
+<li><p>Ian Effendi</p>
+</li>
+<li><a href="mailto:iae2784@rit.edu" target="_blank" rel="noopener">iae2784@rit.edu</a> </li>
+</ul>
+<h2 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h2><p>Our team is performing an analysis on the community architecture of the <a href="https://www.kdevelop.org/" target="_blank" rel="noopener">KDEvelop</a> IDE.</p>
+<p>KDevelop is a cross-platform, multi-language IDE, with a wide variety of integrations. It supports plugins to add more functionality seamlessly.</p>
+<h2 id="Division-of-Labor"><a href="#Division-of-Labor" class="headerlink" title="Division of Labor"></a>Division of Labor</h2><p>Each team member is responsible for a different ‘slice’ of the analysis.</p>
+<h3 id="Nic-Hartley"><a href="#Nic-Hartley" class="headerlink" title="Nic Hartley"></a>Nic Hartley</h3><p>Nic is responsible for running Git By a Bus on the repository and answering questions related to the project’s survivability in the event the top 20% of active contributors were unable to continue development. </p>
+<p>This includes the following questions:</p>
+<ol>
+<li><p>6E - Who has the highest amounts of “Unique Knowledge?” (As per your “Git-by-a-bus” report. If there is a tie, list each contributor, with links if possible).</p>
+</li>
+<li><p>6J - What have been some of the major bugs/problems/issues that have arisen during development? Who is responsible for quality control and bug repair?</p>
+</li>
+<li><p>6K - How is the project’s participation trending and why?</p>
+</li>
+<li><p>6L - In your opinion, does the project pass “The Raptor Test?” (i.e. Would the project survive if the BDFL, or most active contributor were eaten by a Velociraptor?) Why or why not?</p>
+</li>
+<li><p>6M - In your opinion, would the project survive if the core team, or most active 20% of contributors, were hit by a bus? Why or why not?</p>
+</li>
+</ol>
+<h3 id="Joshua-Schenk"><a href="#Joshua-Schenk" class="headerlink" title="Joshua Schenk"></a>Joshua Schenk</h3><p>Joshua is responsible for calculating the Callaway Coefficient of Fail and answering questions regarding the structure and decision-making process of the community.</p>
+<p>This includes the following questions:</p>
+<ol>
+<li><p>6F - What is your project’s “Calloway Coefficient of Fail?”</p>
+</li>
+<li><p>6G - Has there been any turnover in the Core Team? (i.e. has the same top 20% of contributors stayed the same over time? If not, how has it changed?)</p>
+</li>
+<li><p>6H - Does the project have a BDFL, or Lead Developer? (BDFL == Benevolent Dictator for Life) If not, what is the structure of its leadership, and how is it chosen?</p>
+</li>
+<li><p>6I - Are the front and back end developers the same people? What is the proportion of each?</p>
+</li>
+<li><p>6Q - Based on these answers, how would you describe the decision making structure/process of this group? Is it hierarchical, consensus building, ruled by a small group, barely contained chaos, or ruled by a single or pair of individuals?</p>
+</li>
+</ol>
+<h3 id="Ian-Effendi"><a href="#Ian-Effendi" class="headerlink" title="Ian Effendi"></a>Ian Effendi</h3><p>Ian is responsible for the utilizing the alternative analysis tool (in this case, the ‘<a href="http://oss-watch.ac.uk/apps/openness/" target="_blank" rel="noopener">Openness Rating</a>’ tool provided by OSS Watch) and answering biographical questions regarding the project.</p>
+<p>This includes answering the following questions:</p>
+<ol>
+<li><p>6A - Write a description of the project, its purpose and goals.</p>
+</li>
+<li><p>6B - Give a brief history of the project. When was the initial commit? The latest commit?</p>
+</li>
+<li><p>6C - Who approves patches? How many people?</p>
+</li>
+<li><p>6D - Who has commit access, or has had patches accepted? How many total?</p>
+</li>
+<li><p>6N - Does the project have an official “on-boarding” process in place? (new contributor guides, quickstarts, communication leads who focus specifically on newbies, etc…)</p>
+</li>
+<li><p>6O - Does the project have Documentation available? How extensive is it? Does it include code examples?</p>
+</li>
+<li><p>6P - If you were going to contribute to this project, but ran into trouble or hit blockers, who would you contact, and how?</p>
+</li>
+</ol>
+<h2 id="Important-Links"><a href="#Important-Links" class="headerlink" title="Important Links"></a>Important Links</h2><p>The source code can be found at <a href="https://github.com/KDE/kdevelop" target="_blank" rel="noopener">KDEvelop’s GitHub Repository</a>.</p>
+<h2 id="How-will-you-communicate-with-them-i-e-IRC-Channel-Email-Address-mail-lists-issue-trackers-etc…"><a href="#How-will-you-communicate-with-them-i-e-IRC-Channel-Email-Address-mail-lists-issue-trackers-etc…" class="headerlink" title="How will you communicate with them? (i.e. IRC Channel, Email Address, mail lists, issue trackers, etc…)"></a>How will you communicate with them? (i.e. IRC Channel, Email Address, mail lists, issue trackers, etc…)</h2><p>KDEvelop uses the #kdevelop channel on Freenode IRC.<br>The project mailing list can be found here: <a href="https://mail.kde.org/mailman/listinfo/kdevelop-devel" target="_blank" rel="noopener">https://mail.kde.org/mailman/listinfo/kdevelop-devel</a></p>
+<h2 id="Upstream-Contributor-Mentors"><a href="#Upstream-Contributor-Mentors" class="headerlink" title="Upstream / Contributor Mentors"></a>Upstream / Contributor Mentors</h2><p>Several team members are listed on KDEvelop’s website <a href="https://www.kdevelop.org/kdevelop-team" target="_blank" rel="noopener">here</a>, including inactive developers. Below is the information for the core and active contributors.</p>
+<h3 id="Core-Developers"><a href="#Core-Developers" class="headerlink" title="Core Developers"></a>Core Developers</h3><ul>
+<li>Kevin Funk | <a href="mailto:kfunk@kde.org" target="_blank" rel="noopener">kfunk@kde.org</a></li>
+<li><p>Co-maintainer; C++/Clang, General Improvements, QA, Windows Support, Performance, Website, and more…</p>
+</li>
+<li><p>Sven Brauch | <a href="mailto:svenbrauch@gmail.com" target="_blank" rel="noopener">svenbrauch@gmail.com</a></p>
+</li>
+<li><p>Co-Maintainer; Python Support, User Interface improvements</p>
+</li>
+<li><p>Milian Wolff | <a href="mailto:mail@milianw.de" target="_blank" rel="noopener">mail@milianw.de</a></p>
+</li>
+<li><p>Generic manager, Webdevelopment Plugins, Snippets, Bugfixing, Performance, and more…</p>
+</li>
+<li><p>Aleix Pol Gonzalez | <a href="aleixpol@gmail.com">aleixpol@gmail.com</a></p>
+</li>
+<li>CMake Support, Run Support, Kross Support, Git Support, and more…</li>
+</ul>
+<h3 id="Active-Contributors"><a href="#Active-Contributors" class="headerlink" title="Active Contributors"></a>Active Contributors</h3><ul>
+<li>David Nolden | <a href="david.nolden.kdevelop@art-master.de">david.nolden.kdevelop@art-master.de</a></li>
+<li><p>Definition-Use Chain, C++ Support, Code Navigation, Code Completion, Coding Assistance, Refactoring, and more…</p>
+</li>
+<li><p>Olivier JG | <a href="olivier.jg@gmail.com">olivier.jg@gmail.com</a></p>
+</li>
+<li>Various Bugfixes, Polishing, Bug Triaging, Rename Assistant, and more…</li>
+</ul>
+<h2 id="On-Challenges"><a href="#On-Challenges" class="headerlink" title="On Challenges"></a>On Challenges</h2><h3 id="What-are-the-easy-parts"><a href="#What-are-the-easy-parts" class="headerlink" title="What are the easy parts?"></a>What are the easy parts?</h3><ul>
+<li><p>Finding the biographical information regarding the project is just a matter of searching for answers in the right places.</p>
+</li>
+<li><p>Since KDE supports the development of KDEvelop, it’s easier to find documentation for the community in one place.</p>
+</li>
+<li><p>Divvying up the work should be ‘easy’ because the rubric establishes all of the things that must be done; it’s just a matter of assigning tasks to each participant.</p>
+</li>
+</ul>
+<h3 id="What-are-the-hard-parts"><a href="#What-are-the-hard-parts" class="headerlink" title="What are the hard parts?"></a>What are the hard parts?</h3><ul>
+<li><p>Getting into contact with ‘upstream Mentors’. Time zones and online availability are factors that can impact the process.</p>
+</li>
+<li><p>Large projects will take a longer time to analyze. Knowing the exact process to contribute may take more time to </p>
+</li>
+<li><p>Keeping in communication with team members while working on the analysis itself can be difficult.</p>
+</li>
+</ul>
+<h3 id="How-will-you-overcome-both"><a href="#How-will-you-overcome-both" class="headerlink" title="How will you overcome both?"></a>How will you overcome both?</h3><p>By Tuesday, we seek to complete the task distribution and team proposal documents. </p>
+<p>By Wednesday, we seek to complete each of our analyses and discuss our conclusions for each of the answers.</p>
+<p>By Thursday, we’ll take our individual write-up and put together a presentation to showcase in class on Friday.</p>
+<p>On Friday, we’ll present our findings.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="http://github.com/rimij405">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Team-Proposal"><span class="toc-number">1.</span> <span class="toc-text">Team Proposal</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Team-Members"><span class="toc-number">1.1.</span> <span class="toc-text">Team Members</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Project"><span class="toc-number">1.2.</span> <span class="toc-text">Project</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Division-of-Labor"><span class="toc-number">1.3.</span> <span class="toc-text">Division of Labor</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Nic-Hartley"><span class="toc-number">1.3.1.</span> <span class="toc-text">Nic Hartley</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Joshua-Schenk"><span class="toc-number">1.3.2.</span> <span class="toc-text">Joshua Schenk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ian-Effendi"><span class="toc-number">1.3.3.</span> <span class="toc-text">Ian Effendi</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Important-Links"><span class="toc-number">1.4.</span> <span class="toc-text">Important Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-will-you-communicate-with-them-i-e-IRC-Channel-Email-Address-mail-lists-issue-trackers-etc…"><span class="toc-number">1.5.</span> <span class="toc-text">How will you communicate with them? (i.e. IRC Channel, Email Address, mail lists, issue trackers, etc…)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Upstream-Contributor-Mentors"><span class="toc-number">1.6.</span> <span class="toc-text">Upstream / Contributor Mentors</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Core-Developers"><span class="toc-number">1.6.1.</span> <span class="toc-text">Core Developers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Active-Contributors"><span class="toc-number">1.6.2.</span> <span class="toc-text">Active Contributors</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#On-Challenges"><span class="toc-number">1.7.</span> <span class="toc-text">On Challenges</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#What-are-the-easy-parts"><span class="toc-number">1.7.1.</span> <span class="toc-text">What are the easy parts?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#What-are-the-hard-parts"><span class="toc-number">1.7.2.</span> <span class="toc-text">What are the hard parts?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-will-you-overcome-both"><span class="toc-number">1.7.3.</span> <span class="toc-text">How will you overcome both?</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://rimij405.github.io/blog/hfoss/commarchteam/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://rimij405.github.io/blog/hfoss/commarchteam/&text=Community Archictecture Analysis: Team Proposal"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://rimij405.github.io/blog/hfoss/commarchteam/&is_video=false&description=Community Archictecture Analysis: Team Proposal"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Community Archictecture Analysis: Team Proposal&body=Check out this article: http://rimij405.github.io/blog/hfoss/commarchteam/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://rimij405.github.io/blog/hfoss/commarchteam/&title=Community Archictecture Analysis: Team Proposal"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://rimij405.github.io/blog/hfoss/commarchteam/&name=Community Archictecture Analysis: Team Proposal&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="http://github.com/rimij405">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

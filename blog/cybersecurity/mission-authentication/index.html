@@ -7,20 +7,20 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Mission: AuthenticationToday’s little server-side experimentation dealt with ssh security and authentication. I’ll admit, I’ve been logging into my personal server using a password. Before we dive int">
-<meta name="keywords" content="tutorial,ssh,authentication">
+<meta name="keywords" content="personal,tutorial,ssh,authentication">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mission: Authentication">
 <meta property="og:url" content="http://rimij405.github.io/blog/cybersecurity/mission-authentication/index.html">
 <meta property="og:site_name" content="The Lion&#39;s Red Mane">
 <meta property="og:description" content="Mission: AuthenticationToday’s little server-side experimentation dealt with ssh security and authentication. I’ll admit, I’ve been logging into my personal server using a password. Before we dive int">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://rimij405.github.io/blog/cybersecurity/mission-authentication/lewis-ngugi-186309-unsplash_thumb.jpg">
-<meta property="og:image" content="http://rimij405.github.io/blog/cybersecurity/mission-authentication/pankaj-patel-729895-unsplash_thumb.jpg">
-<meta property="og:updated_time" content="2019-01-25T04:05:56.891Z">
+<meta property="og:image" content="http://rimij405.github.io/images/posts/mission-authentication/lewis-ngugi.jpg">
+<meta property="og:image" content="http://rimij405.github.io/images/posts/mission-authentication/pankaj-patel.jpg">
+<meta property="og:updated_time" content="2019-03-22T03:36:53.407Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mission: Authentication">
 <meta name="twitter:description" content="Mission: AuthenticationToday’s little server-side experimentation dealt with ssh security and authentication. I’ll admit, I’ve been logging into my personal server using a password. Before we dive int">
-<meta name="twitter:image" content="http://rimij405.github.io/blog/cybersecurity/mission-authentication/lewis-ngugi-186309-unsplash_thumb.jpg">
+<meta name="twitter:image" content="http://rimij405.github.io/images/posts/mission-authentication/lewis-ngugi.jpg">
     
     
         
@@ -78,6 +78,8 @@
     <span id="actions">
       <ul>
         
+        <li><a class="icon" href="/blog/hfoss/global-game-jam-2019/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
         
         <li><a class="icon" href="/blog/hfoss/next-steps/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
@@ -101,7 +103,12 @@
   <li><a class="icon" href="http://reddit.com/submit?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&title=Mission: Authentication"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&title=Mission: Authentication"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://digg.com/submit?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&title=Mission: Authentication"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&name=Mission: Authentication&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&name=Mission: Authentication&description=&lt;h1 id=&#34;Mission-Authentication&#34;&gt;&lt;a href=&#34;#Mission-Authentication&#34; class=&#34;headerlink&#34; title=&#34;Mission: Authentication&#34;&gt;&lt;/a&gt;Mission: Authentication&lt;/h1&gt;&lt;p&gt;Today’s little server-side experimentation dealt with ssh security and authentication. I’ll admit, I’ve been logging into my personal server using a password.&lt;/p&gt;
+&lt;p&gt;Before we dive into it, as a &lt;strong&gt;disclaimer&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;I am in no way a cryptologist, cryptographer, or security expert. The material written here was taken from around the web, and, as all things, is subject to human error.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That &lt;a href=&#34;https://simple.wikipedia.org/wiki/Cleartext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cleartext&lt;/a&gt; security information has been passing through my tunnels ever since I started working on that server. It was simply time to move one step up in the world of authentication - it was time to use some &lt;em&gt;cryptography&lt;/em&gt;.&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -146,7 +153,7 @@
       
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/authentication/">authentication</a>, <a class="tag-link" href="/tags/ssh/">ssh</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
+        <a class="tag-link" href="/tags/authentication/">authentication</a>, <a class="tag-link" href="/tags/personal/">personal</a>, <a class="tag-link" href="/tags/ssh/">ssh</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
     </div>
 
 
@@ -156,12 +163,12 @@
   
 <div class="article-gallery">
     
-    <a class="gallery-item" href="/blog/cybersecurity/mission-authentication/lewis-ngugi-186309-unsplash_thumb.jpg" rel="gallery_cjrbizfyc0000r0yc696rjplp">
-        <img src="/blog/cybersecurity/mission-authentication/lewis-ngugi-186309-unsplash_thumb.jpg" itemprop="image">
+    <a class="gallery-item" href="/images/posts/mission-authentication/lewis-ngugi.jpg" rel="gallery_cjtjoro290014lwycqu4jzk1b">
+        <img src="/images/posts/mission-authentication/lewis-ngugi.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/blog/cybersecurity/mission-authentication/pankaj-patel-729895-unsplash_thumb.jpg" rel="gallery_cjrbizfyc0000r0yc696rjplp">
-        <img src="/blog/cybersecurity/mission-authentication/pankaj-patel-729895-unsplash_thumb.jpg" itemprop="image">
+    <a class="gallery-item" href="/images/posts/mission-authentication/pankaj-patel.jpg" rel="gallery_cjtjoro290014lwycqu4jzk1b">
+        <img src="/images/posts/mission-authentication/pankaj-patel.jpg" itemprop="image">
     </a>
     
 </div>
@@ -174,6 +181,7 @@
 <p><strong>I am in no way a cryptologist, cryptographer, or security expert. The material written here was taken from around the web, and, as all things, is subject to human error.</strong></p>
 </blockquote>
 <p>That <a href="https://simple.wikipedia.org/wiki/Cleartext" target="_blank" rel="noopener">cleartext</a> security information has been passing through my tunnels ever since I started working on that server. It was simply time to move one step up in the world of authentication - it was time to use some <em>cryptography</em>.</p>
+<a id="more"></a>
 <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>As always, I like to make sure I understand what it is I’m playing with. Cryptology? Cryptography? Aren’t they the same thing?</p>
 <p>Well, according to <a href="https://crypto.stackexchange.com/users/23623/sejpm" target="_blank" rel="noopener">@SEJPM</a> and <a href="https://crypto.stackexchange.com/users/29574/lery" target="_blank" rel="noopener"><em>@Lery</em></a> over at the Crypto StackExchange, there are a couple of related terms that tend to be used <a href="https://crypto.stackexchange.com/questions/57818/is-there-any-difference-between-cryptography-and-cryptology" target="_blank" rel="noopener">interchangeably</a>.</p>
 <h3 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h3><p>To get down to the semantics:</p>
@@ -195,7 +203,7 @@
 <h3 id="Client-Side"><a href="#Client-Side" class="headerlink" title="Client-Side"></a>Client-Side</h3><p>On the client-side, this might look like a host key fingerprint. By keeping track of this information, the client can verify that the host on the other side of the connection is, in fact, who they say they are.</p>
 <h3 id="Server-Side"><a href="#Server-Side" class="headerlink" title="Server-Side"></a>Server-Side</h3><p>If the server is given a public key by the client, it can check to ensure the client has the accompanying private key whenever it connects. If the key is given passphrase protection, the client is responsible for authenticating the key before it can be trusted by the server as well!</p>
 <h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><p>Secure Shell (SSH) is a cryptographic <a href="https://man.openbsd.org/ssh.1" target="_blank" rel="noopener">remote login program</a>, providing a secure channel over an unsecured network in client-server architecture. We can use applications that leverage this protocol to do things like manage files remotely, update repositories, and transfer files.</p>
-<img src="/blog/cybersecurity/mission-authentication/pankaj-patel-729895-unsplash_large.jpg" title="Screenshot of GitHub ssh session - Image by Pankaj Patel">
+<p><img src="/images/posts/mission-authentication/pankaj-patel-large.jpg" alt="Screenshot of GitHub ssh session - Image by Pankaj Patel"></p>
 <p>One strategy for securing this channel is through the use of the public-key cryptography. With great power comes great responsibility: the ability to execute command remotely is great for DevOps and sysadmins, but, the remote communication can be exposed to a lot of third-party actors.</p>
 <p><strong>PasswordAuthentication</strong></p>
 <p>Logging into a secure shell remotely can vary depending on the host’s settings, but, for the most part, clients typically connect to a host by providing a username, hostname, and port. The most basic of authentication allows users to enter a password (that is sent as cleartext) over the network. While this is the easiest way to remote login to a server, it’s also the least secure.</p>
@@ -262,7 +270,12 @@
   <li><a class="icon" href="http://reddit.com/submit?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&title=Mission: Authentication"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&title=Mission: Authentication"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://digg.com/submit?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&title=Mission: Authentication"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&name=Mission: Authentication&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://rimij405.github.io/blog/cybersecurity/mission-authentication/&name=Mission: Authentication&description=&lt;h1 id=&#34;Mission-Authentication&#34;&gt;&lt;a href=&#34;#Mission-Authentication&#34; class=&#34;headerlink&#34; title=&#34;Mission: Authentication&#34;&gt;&lt;/a&gt;Mission: Authentication&lt;/h1&gt;&lt;p&gt;Today’s little server-side experimentation dealt with ssh security and authentication. I’ll admit, I’ve been logging into my personal server using a password.&lt;/p&gt;
+&lt;p&gt;Before we dive into it, as a &lt;strong&gt;disclaimer&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;I am in no way a cryptologist, cryptographer, or security expert. The material written here was taken from around the web, and, as all things, is subject to human error.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That &lt;a href=&#34;https://simple.wikipedia.org/wiki/Cleartext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cleartext&lt;/a&gt; security information has been passing through my tunnels ever since I started working on that server. It was simply time to move one step up in the world of authentication - it was time to use some &lt;em&gt;cryptography&lt;/em&gt;.&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
