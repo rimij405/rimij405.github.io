@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>Community Archictecture Analysis: KDevelop</title>
+      <title>Community Architecture Analysis: KDevelop</title>
       <link href="/blog/hfoss/commarchreport/"/>
       <url>/blog/hfoss/commarchreport/</url>
       
@@ -61,13 +61,13 @@
             
             <tag> class </tag>
             
+            <tag> quicklook </tag>
+            
             <tag> graphics </tag>
             
             <tag> film </tag>
             
             <tag> imaging </tag>
-            
-            <tag> quicklook </tag>
             
         </tags>
       
@@ -296,9 +296,9 @@
             
             <tag> class </tag>
             
-            <tag> documentation </tag>
-            
             <tag> game development </tag>
+            
+            <tag> documentation </tag>
             
             <tag> game engine </tag>
             

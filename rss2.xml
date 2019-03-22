@@ -8,11 +8,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>An exploration of thought, code architecture, open source culture, design, development, and more.</description>
-    <pubDate>Fri, 22 Mar 2019 05:29:49 GMT</pubDate>
+    <pubDate>Fri, 22 Mar 2019 06:37:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Community Archictecture Analysis: KDevelop</title>
+      <title>Community Architecture Analysis: KDevelop</title>
       <link>http://rimij405.github.io/blog/hfoss/commarchreport/</link>
       <guid>http://rimij405.github.io/blog/hfoss/commarchreport/</guid>
       <pubDate>Fri, 22 Mar 2019 03:43:55 GMT</pubDate>
