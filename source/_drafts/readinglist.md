@@ -1,15 +1,7 @@
 ---
-title: In the Heart of Open Source
+title: readinglist
 tags:
-- open-source
-- culture
-- class
-- discourse
-- community
-categories:
-- [blog, hfoss]
 ---
-
 Discussion about the culture behind FLOSS/FOSS culture ideologies.
 
 Reading List
