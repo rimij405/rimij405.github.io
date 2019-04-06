@@ -142,6 +142,8 @@ I installed Node.js first because I knew it would be easy. I've got Node.js expe
 
 ##### Docker Desktop for Windows #####
 
+Docker didn't end up working out for me. My copy of Windows (Windows 10 Home) doesn't include Hyper-V; if it did, this would have been much, much easier. Because of this, I'll have to follow the old-school installation instructions.
+
 I've never used Docker and don't pretend to know how it does what it does. I imagine Docker containers are a lot like lightweight virtual machines, but without all the baggage an operating system would carry in the latter situation.
 
 ###### Hyper-V vs. VirtualBox ######
@@ -214,13 +216,14 @@ Then I tested out the `docker run hello-world` command...
 
 ![Screenshot of Docker Toolbox terminal after running docker run -it ubuntu bash.](/images/posts/bugfix/fcc_docker_ubuntu.png)
 
-Certainly, this was the most involved process just to get local development up and running. I would have loved it if they had just pointed me to the toolbox in the first place, by indicating that the people without Windows 10 Professional or Enterprise should make do with legacy software.
+For the Docker Toolbox installation, we would also need to change the `DOCKER_HOST_LOCATION` property in the `.env` file to the output from the `docker-machine ip` command. Unfortunately, getting up to this point doesn't guarantee success. A command that is run later on, as a part of the dependency installation, doesn't play nicely with Toolbox. I had to uninstall my installation and this time, I tried using the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). I used this guide from [Rio Martinez](https://medium.com/@riomartinez): "[Docker Running Seamlessly in Windows Subsystem [for] Linux](https://medium.com/devopslinks/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa)".
+
+The largest problem is that Docker doesn't yet support the Windows for Subsystem Linux - I made a judgement call to stop trying to figure it out at this point. My next solution would have been to install Docker on my VirtualBox instance of OpenSUSE, but, this had its own headaches associated with it; namely, I'd have to start the process from the beginning, clone the repo to OpenSUSE, and fiddle with VirtualBox's network adapter just to be able to get it to bridge over to my host machine's network. All possible, but, time-consuming. I imagine that I represent an edge case - surely, most others with Hyper-V on their Windows systems would do well to follow the most up-to-date Docker installation notes.
 
 #### Installing dependencies ####
 
 At this point, we could go ahead and change the API keys in freeCodeCamp's setup, but, we are just running it locally to fix some challenge files. We're not focused on getting access to all the different types of services just yet.
 
-For the Docker Toolbox installation, we need to change the `DOCKER_HOST_LOCATION` property in the `.env` file to the output from the `docker-machine ip` command.
 
 Following this, we have to bootstrap the docker images once in order to prep them for running. We can do this by running freeCodeCamp's npm scripts from the project directory.
 
