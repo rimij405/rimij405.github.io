@@ -79,7 +79,9 @@ When I opened up the guide to setting freeCodeCamp up locally, I was greeted wit
 As of 8 March 2019, please consider helping us test our new guide on how to [setup freeCodeCamp locally using Docker](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally-using-docker.md) instead of using this guide. It should result in fewer, if not zero, errors but we won't know until enough devs try it.
 {% endblockquote %}
 
-I've never used Docker before, but, I guess it's as good a time as ever.
+This is my way of clarifying that *I did not use Docker* to setup the local environment - {% post_link triage-docker-on-wsl my attempts resulted in a fruitless four-hour triage attempt that could have been solved by using a virtual machine %} to begin with.
+
+Instead, I went with the legacy approach: build freeCodeCamp locally using MongoDB, Node.js, and npm. This method I knew would work - I've had prior experience using my computer for this type of development.
 
 ### Forking the Repository ###
 
@@ -126,13 +128,13 @@ git remote -v
 
 Seems like all is good. The next step in the guide was to set up an upstream anyway, so, this ended up getting that done for me.
 
-### Running the local copy ###
+### Building the local copy ###
 
 This can be useful for previewing edits to the pages as they would appear on the learning platform.
 
-#### Installing prerequisites ####
+#### Installing dependencies ####
 
-From the `Docker` guide, we are required to install the stable version of the [community edition](https://docs.docker.com/install/), and the latest LTS version of [`Node.js`](http://nodejs.org/). (We also need `npm`, but that comes bundled with Node).
+From the `Docker` guide, we are required to install the stable version of the [community edition](https://docs.docker.com/install/), and the latest LTS version of [`Node.js`](http://nodejs.org/). (We also need `npm`, but that comes bundled with Node). Docker didn't end up working out for me. My copy of Windows (Windows 10 Home) doesn't include Hyper-V; if it did, this would have been much, much easier. Because of this, I had to follow the old-school installation instructions: MongoDB would have to do.
 
 ##### Node.js & npm #####
 
@@ -140,99 +142,88 @@ From the `Docker` guide, we are required to install the stable version of the [c
 
 I installed Node.js first because I knew it would be easy. I've got Node.js experience - no shenanigans there.
 
-##### Docker Desktop for Windows #####
+##### MongoDB Community Edition #####
 
-Docker didn't end up working out for me. My copy of Windows (Windows 10 Home) doesn't include Hyper-V; if it did, this would have been much, much easier. Because of this, I'll have to follow the old-school installation instructions.
+Since I'm working from Windows, I followed MongoDB Community Edition's installation [guidelines](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#install-mdb-edition). I installed MongoDB as a service, but, you may need to install it in a different way for your system. Mongo's database instance starts as a part of the service installation process, but, since I often work in Git Bash for Windows, I wanted to make sure the `mongo` and `mongod` commands were accessible from the `PATH` environment variable.
 
-I've never used Docker and don't pretend to know how it does what it does. I imagine Docker containers are a lot like lightweight virtual machines, but without all the baggage an operating system would carry in the latter situation.
-
-###### Hyper-V vs. VirtualBox ######
-
-Since I'm a no-good, very bad Windows user, I need to install the [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows). But, this requires some additional tinkering. I need to have [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) enabled on my system, but, VirtualBox  will no longer work as long as it's enabled.
-
-The problem: I use [VirtualBox](https://www.virtualbox.org/) for development of [Sugar](https://wiki.sugarlabs.org/go/Welcome_to_the_Sugar_Labs_wiki) activities on a [Fedora Spin of Sugar-on-a-Stick](https://wiki.sugarlabs.org/go/Sugar_on_a_Stick). If I can't run VirtualBox, I'm going to have a bad time.
-
-###### The Workaround ######
-
-I sought an a workaround in the meantime and was thankful to find that I wasn't the only one interested in running Hyper-V and VirtualBox on the same system. [Derek Gusoff](https://derekgusoff.wordpress.com/2012/09/05/run-hyper-v-and-virtualbox-on-the-same-machine/) found that one could use the `bcdedit` command in windows in order to edit the `hypervisorlaunchtype` property. 
-
-If you set it to `off` and reboot, you'll be able to use VirtualBox:
+I opened up my `.bashrc` file and added something along the lines of this to my script:
 
 ```bash
-bcdedit /set hypervisorlaunchtype off
+# Inside ~/.bashrc, ~/.bash_profile, or ~/.profile
+if [ -d "/<...>/MongoDB/Server/<version>/bin" ] ; then
+  export PATH="/<...>/MongoDB/Server/<version>/bin:$PATH"
+fi
 ```
 
-If you set it to `auto` and reboot, you'll be able to use Hyper-V once again:
+What the above script does is check to see if the MongoDB directory exists and the adds it to the `PATH` variable. Be sure to replace `<...>` and `<version>` appropriately when setting this up for yourself.
+
+After editing the configuration file, either logout and log back into bash or source the file you've edited appropriately:
 
 ```bash
-bcdedit /set hypervisorlaunchtype auto
+source ~/.bashrc
 ```
 
-As of VirtualBox version 6.0.0, there is some limited support for VM's to run on systems where Hyper-V is activated, but, you're [mileage may vary](https://forums.virtualbox.org/viewtopic.php?f=6&t=90853).
+With that, you can `echo "$PATH"` to confirm it's been added correctly. Be sure to wrap the `PATH` variable in quotes when evaluating to ensure whitespace doesn't mess with your terminal.
 
-All of these options, although nice, suggest turning to Microsoft for their official solution: when you want to use VirtualBox, turn Hyper-V off and reboot.
+If you want to see the first element in your PATH variable, you can use the following script - and don't forget to check your version of Mongo to ensure the installation was correct!
 
-You can do it through the control panel:
+![Animation of the following bash script being executed in the terminal Git Bash for Windows.](/images/posts/bugfix/fcc_path_example.gif)
 
-![Screenshot of deactivating Hyper-V.](/images/posts/bugfix/fcc_hyper-v.png)
+<!--- Source: https://unix.stackexchange.com/questions/65932/how-to-get-the-first-word-of-a-string -->
 
-Or through a neat little command, if executed with elevated user permissions:
+```bash
+# Get first element in the PATH.
+echo "$PATH" | head -n1 | sed -e 's/:.*$//'
+
+# Check mongo and mongodb versions, respectively.
+mongo --version
+mongodb --version
+```
+
+#### Configure Dependencies ####
+
+Next up: setting up the environment variables specific to Free Code Camp's build process.
+
+```bash
+# Create a copy of the "sample.env" and name it ".env".
+# Populate it with the necessary API keys and secrets:
+copy sample.env .env
+```
+
+Since the keys in the `.env` file are not required to be changed in order to run the app locally, I left the default values from sample.env as-is.
+
+*(NB: Before editing any of the code, I made sure to checkout a local branch called `master-local`. I always like to be on the safe side!)*
+
+Following that a call to `npm ci` will install the project's dependencies. In my scenario, I also had to install [`lerna`](https://github.com/lerna/lerna#readme) globally. Lerna is a package manager's package manager so-to-speak. It's really for projects with a large amount of packages to maintain.
+
+##### Troubleshooting Installation #####
+
+**Be warned!** If you don't install lerna prior to executing `npm ci` it will just hang at the `lerna bootstrap` command that is called during the installation process. For me, I had to execute `lerna exec npm install` instead just to get the project's dependencies to install in the first place.
+
+In addition, on Windows, there was an issue running the commands from the base system - instead, I needed to start an elevated PowerShell instance with administrator privileges:
+
+<!--- Reference: https://serverfault.com/questions/464018/run-elevated-powershell-prompt-from-command-line -->
+
+```bash
+# Start a new powershell instance in-line, in the current working directory, using Git Bash.
+powershell $pwd
+```
 
 ```powershell
-Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor
+# Start an elevated instance in a new window.
+Start-Process PowerShell -Verb RunAs
 ```
 
-###### Only Professionals Allowed ######
+From there, I was able to complete the development process!
 
-The good thing is that Docker will install Hyper-V for us. The bad thing? We need to log in just to download the installer.
+### Running Local ###
 
-![Screenshot of downloading Docker installer.](/images/posts/bugfix/fcc_docker-install.png)
+With a quick call to `npm install` to ensure everything was properly installed, followed by an `npm run bootstrap`, the dependencies were ready. My instance of MongoDB was primed and ready - so with `npm seed`, the database was filled with test data provided by the repository.
 
-So after the registration, password generation, captcha, refreshing, clicking on confirmation codes, email verification, and signing in multiple times I'll be right back...I really hope that I have Microsoft 10 Professional edition.
+Underneath everything, the curriculum is just a Node.js application. I felt like I recognized what it was that I was looking at when I built a development environment with `npm develop`. With a welcoming, `DONE Compiled successfully in 52127ms` - we did it.
 
-I was finally able to download Docker CE and was greeted with this:
+I could now see my copy on the localhost.
 
-![Screenshot of a failed Docker installer.](/images/posts/bugfix/fcc_docker-noinstall.png)
+***
 
-At this point, I could have turned back and tried with freeCodeCamp's other installation strategy, but, I figured it didn't hurt to try Docker's [legacy installer](https://docs.docker.com/toolbox/overview/).
-
-##### Docker Toolbox #####
-
-![Screenshot of documentation that says: "Legacy desktop solution. Docker Toolbox is for older Mac and Windows systems that do not meet the requirements of Docker Desktop for Mac and Docker Desktop for Windows. We recommend updating to the newer applications, if possible."](/images/posts/bugfix/fcc_docker-toolbox-notes.png)
-
-"I don't know if this will work, but it doesn't hurt to try." - Me, trying out Docker Toolbox. Basically, Toolbox uses VirtualBox instead of Microsoft's native Hyper-V. There's nothing guaranteeing it will run the server in the way we want it to, but, it's worth a shot.
-
-![Screenshot of shortcuts for Docker Toolbox, after installation.](/images/posts/bugfix/fcc_docker-toolbox-install.png)
-
-I followed the [installation](https://docs.docker.com/toolbox/toolbox_install_windows/) instructions for Docker Toolbox (unchecking the already installed VirtualBox and Git from Windows programs when prompted by the installer).
-
-![Screenshot of Docker Toolbox terminal after verifying installation.](/images/posts/bugfix/fcc_docker-toolbox-success.png)
-
-Then I tested out the `docker run hello-world` command...
-
-![Screenshot of Docker Toolbox terminal after running docker run hello world.](/images/posts/bugfix/fcc_docker-toolbox-success-2.png)
-
-...and the `docker run -it ubuntu bash` command.
-
-![Screenshot of Docker Toolbox terminal after running docker run -it ubuntu bash.](/images/posts/bugfix/fcc_docker_ubuntu.png)
-
-For the Docker Toolbox installation, we would also need to change the `DOCKER_HOST_LOCATION` property in the `.env` file to the output from the `docker-machine ip` command. Unfortunately, getting up to this point doesn't guarantee success. A command that is run later on, as a part of the dependency installation, doesn't play nicely with Toolbox. I had to uninstall my installation and this time, I tried using the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). I used this guide from [Rio Martinez](https://medium.com/@riomartinez): "[Docker Running Seamlessly in Windows Subsystem [for] Linux](https://medium.com/devopslinks/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa)".
-
-The largest problem is that Docker doesn't yet support the Windows for Subsystem Linux - I made a judgement call to stop trying to figure it out at this point. My next solution would have been to install Docker on my VirtualBox instance of OpenSUSE, but, this had its own headaches associated with it; namely, I'd have to start the process from the beginning, clone the repo to OpenSUSE, and fiddle with VirtualBox's network adapter just to be able to get it to bridge over to my host machine's network. All possible, but, time-consuming. I imagine that I represent an edge case - surely, most others with Hyper-V on their Windows systems would do well to follow the most up-to-date Docker installation notes.
-
-#### Installing dependencies ####
-
-At this point, we could go ahead and change the API keys in freeCodeCamp's setup, but, we are just running it locally to fix some challenge files. We're not focused on getting access to all the different types of services just yet.
-
-
-Following this, we have to bootstrap the docker images once in order to prep them for running. We can do this by running freeCodeCamp's npm scripts from the project directory.
-
-```bash
-npm install --dev --ignore-scripts
-npm audit fix
-npm run docker:init
-npm run docker:install
-npm run docker:seed
-```
-
-Getting here means the worst is finally out of the way.
+## Solving the Challenges ##
