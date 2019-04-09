@@ -135,15 +135,14 @@ After searching for a Linux Distro that was compatible with Docker, I settled on
 sudo apt update && sudo apt upgrade
 ```
 
-All seemed to be going well, but, by the time I get to the end of it I had errors appearing due to the way Windows mounted WSL to the system. Officially, Docker states that they don't support the Windows Subsystem for Linux and Ugh; so close yet so far away. 
+All seemed to be going well, but, by the time I get to the end of it I had errors appearing due to the way Windows mounted WSL to the system. Officially, Docker states that they don't support the Windows Subsystem for Linux. Ugh - so close yet so far away.
 
 ### Host via VirtualBox ###
 
+The largest problem is that Docker doesn't yet support the Windows for Subsystem Linux - I made a judgement call to stop trying to figure it out at this point, but, I have my hunches as to what would work should you find yourself in this situation.
 
-## Docker & Windows-Subsystem-for-Linux ##
+I recommend you look at what (FLOSS) operation systems (besides Windows) officially support Docker and create a guest in VirtualBox based on that distro. If the distro has the official support, if you can get it to run on your system, then you should finally be able to get Docker up and running. There may be some caveats, however.
 
+Technically, my instance of OpenSUSE should have been able to run Docker, but, much of my troubleshooting moved away from being about Docker and more towards fixing my setup for VirtualBox's network adapter. It's a time-consuming process and one that I believe represents an edge case. Surely, most others with Hyper-V on their systems would never have to go down this route, assuming Docker works as it says it does.
 
-##### Docker Toolbox #####
-
-
-The largest problem is that Docker doesn't yet support the Windows for Subsystem Linux - I made a judgement call to stop trying to figure it out at this point. My next solution would have been to install Docker on my VirtualBox instance of OpenSUSE, but, this had its own headaches associated with it; namely, I'd have to start the process from the beginning, clone the repo to OpenSUSE, and fiddle with VirtualBox's network adapter just to be able to get it to bridge over to my host machine's network. All possible, but, time-consuming. I imagine that I represent an edge case - surely, most others with Hyper-V on their Windows systems would do well to follow the most up-to-date Docker installation notes.
+For now, I suggest using Ubuntu 16.04 LTS - the latest 'approved' distro that Docker claims to support in an official capacity. For now, I'll be building my code the old fashioned way - setting up a backend with an instance of MongoDB giving persistence to a Node.js server.
