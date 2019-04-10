@@ -9,8 +9,10 @@ categories:
     - hfoss
   - freeCodeCamp
 photos:
-- /images/posts/bugfix/fcc_banner2.png
+  - /images/posts/bugfix/fcc_banner2.png
+date: 2019-04-08 01:14:25
 ---
+
 
 # Squashing Bugs - freeCodeCamp Issue #35791 #
 
