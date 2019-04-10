@@ -275,7 +275,7 @@ With that, this bug is officially squashed. (Pending their acceptance of my pull
 
 **Updated April 10th, 2019**
 
-As of today, my pull requests have both been merged successfully into the main branch!
+As of today, my pull requests have both been approved for merging into the main branch!
 
 Pull Request ([#35809](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809)):
 
