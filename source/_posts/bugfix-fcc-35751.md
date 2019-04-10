@@ -10,7 +10,7 @@ categories:
   - freeCodeCamp
 photos:
   - /images/posts/bugfix/fcc_acknowledgements.png
-date: 2019-04-05 01:14:25
+date: 2019-04-09 01:14:25
 ---
 
 # Squashing Bugs - freeCodeCamp Issue #35751 #
