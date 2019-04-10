@@ -1,5 +1,5 @@
 ---
-title: 'Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809)'
+title: 'Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)'
 tags:
   - bugfix
   - education
@@ -19,7 +19,7 @@ For my first magic trick:
 
 ![Logo for Free Code Camp.](/images/posts/bugfix/fcc_logo.svg)
 
-I'm contributing to [freeCodeCamp](https://www.freecodecamp.org/) and helped make a [pull request](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809) referencing issue [#35751](https://github.com/freeCodeCamp/freeCodeCamp/issues/35751). The nonprofit's mission is simple: help *campers* learn to code. For free. (*And this time, it's free as in pizza **and** free as in libre*). I hope by documenting my own process, members of the community might get to see an example of what it is that goes on behind the scenes. Before jumping in, I did a little bit of research on freeCodeCamp. {% post_link commarch-fcc You can read my FLOSS review post here. %}
+I'm contributing to [freeCodeCamp](https://www.freecodecamp.org/) and helped make two pull requests ([#35809](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809), [#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810)) referencing this issue ([#35751](https://github.com/freeCodeCamp/freeCodeCamp/issues/35751)). The nonprofit's mission is simple: help *campers* learn to code. For free. (*And this time, it's free as in pizza **and** free as in libre*). I hope by documenting my own process, members of the community might get to see an example of what it is that goes on behind the scenes. Before jumping in, I did a little bit of research on freeCodeCamp. {% post_link commarch-fcc You can read my FLOSS review post here. %}
 
 <!-- Read more -->
 
@@ -263,6 +263,8 @@ Following all this, I notified the maintainers in the original issue ([#35751](h
 
 As pointed out by [@huyenltnguyen](https://github.com/huyenltnguyen) in [this comment](https://github.com/freeCodeCamp/freeCodeCamp/issues/35751#issuecomment-481079680), JS solutions are not full solutions!
 
-So I made a quick edit, solved another challenge, staged and commit my changes, and created another pull request to close out my contributions to this issue.
+So I made a quick edit, solved another challenge, staged and commit my changes, and created another pull request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810)) to close out my contributions to this issue.
+
+![Image of pull request pending build process approval.](/images/posts/bugfix/fcc_pull4.png)
 
 With that, this bug is officially squashed. (Pending their acceptance of my pull requests, of course).
