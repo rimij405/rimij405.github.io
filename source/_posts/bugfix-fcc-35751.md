@@ -273,14 +273,22 @@ With that, this bug is officially squashed. (Pending their acceptance of my pull
 
 ***
 
-**Updated April 10th, 2019**
+## Updated April 10th, 2019 - 10:00 AM ##
 
 As of today, my pull requests have both been approved for merging into the main branch!
 
 Pull Request ([#35809](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809)):
 
-![Screenshot of successful merge.](/images/posts/bugfix/fcc_pull8.png)
+![Screenshot of successful pull request.](/images/posts/bugfix/fcc_pull8.png)
 
 Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810)):
 
-![Screenshot of successful merge.](/images/posts/bugfix/fcc_pull9.png)
+![Screenshot of successful pull request.](/images/posts/bugfix/fcc_pull9.png)
+
+## Updated April 10th, 2019 - 12:33 PM ##
+
+One of the pull requests has been merged into the project's main branch!
+
+Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810)):
+
+![Screenshot of successful merge.](/images/posts/bugfix/fcc_merge2.png)
