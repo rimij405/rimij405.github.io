@@ -269,4 +269,18 @@ So I made a quick edit, solved another challenge, staged and commit my changes, 
 
 With that, this bug is officially squashed. (Pending their acceptance of my pull requests, of course).
 
-![Image of pull request passing Travis CI build process.](/images/post/bugfix/fcc_pull7.png)
+![Image of pull request passing Travis CI build process.](/images/posts/bugfix/fcc_pull7.png)
+
+***
+
+**Updated April 10th, 2019**
+
+As of today, my pull requests have both been merged successfully into the main branch!
+
+Pull Request ([#35809](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809)):
+
+![Screenshot of successful merge.](/images/posts/bugfix/fcc_pull8.png)
+
+Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810)):
+
+![Screenshot of successful merge.](/images/posts/bugfix/fcc_pull9.png)
