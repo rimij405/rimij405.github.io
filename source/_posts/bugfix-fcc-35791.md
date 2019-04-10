@@ -24,7 +24,7 @@ But it's one that resulted in a successful pull request ([#35792](https://github
 
 ![Logo for Free Code Camp.](/images/posts/bugfix/fcc_logo.svg)
 
-The nonprofit's mission is simple: help *campers* learn to code. For free. (*And this time, it's free as in pizza **and** free as in libre*). I did a brief review on the Free Code Camp code base in preparation for the {% post_link bugfix-fcc-35751 other bugfix report here %}. {% post_link commarch-fcc You can read my FLOSS review post here. %}
+The nonprofit's mission is simple: help *campers* learn to code. For free. (*And this time, it's free as in pizza **and** free as in libre*). I did a brief review on the Free Code Camp code base in preparation for the {% post_link bugfix-fcc-35751 other bugfix report here %}. {% post_link commarch-fcc You can also read my FLOSS review post here. %}
 
 <!-- Read more -->
 
@@ -32,13 +32,15 @@ The nonprofit's mission is simple: help *campers* learn to code. For free. (*And
 
 I was reading over the [local developer setup guide](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally.md) when I came across an innocuous typo. The link to the contributor's forum hadn't been updated!
 
-![Screenshot of the suspect.](/images/posts/bugfix/fcc_bugfix-link.png)
+![Screenshot of the suspect.](/images/posts/bugfix/fcc_broken-link.png)
+
+The link goes to `https://www.freecodecamp.org/c/contributors` when it should be pointing to `https://www.freecodecamp.org/forum/c/contributors`.
 
 ## The Issue ##
 
 Since I already had read the [contributor's guide](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/CONTRIBUTING.md). I was ready to roll. I went ahead and created a new issue ([#35791](https://github.com/freeCodeCamp/freeCodeCamp/issues/35791)). 
 
-I gave information about steps on how to reproduce the error, what I believed the expected outcome should have been, and followed all of the contributor guidelines that they had set out for us.
+I gave information about steps on how to reproduce the error, what I believed the expected outcome should have been, and followed all of the contributor guidelines that they had set out for us. The issue itself was a link that pointed to a non-existent page, causing a 404 error - you can read the mundane details in the [issue](https://github.com/freeCodeCamp/freeCodeCamp/issues/35791) itself.
 
 ## Squashing the Bug ##
 
