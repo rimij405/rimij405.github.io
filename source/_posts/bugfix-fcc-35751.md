@@ -25,7 +25,7 @@ I'm contributing to [freeCodeCamp](https://www.freecodecamp.org/) and helped mak
 
 ## Overview ##
 
-I'm started writing this post as soon as I [commented](https://github.com/freeCodeCamp/freeCodeCamp/issues/35751#issuecomment-480128455), volunteering to fix the outstanding issue and was quickly welcomed into the community!
+I started writing this post as soon as I [commented](https://github.com/freeCodeCamp/freeCodeCamp/issues/35751#issuecomment-480128455), volunteering to fix the outstanding issue and was quickly welcomed into the community!
 
 My first step after volunteering was to read the [contributor's guide](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/CONTRIBUTING.md). After reviewing their [Code of Conduct](https://www.freecodecamp.org/code-of-conduct) and deciding that I'd want to work locally before submitting my changes, I hopped into their guides on [coding challenge](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-work-on-coding-challenges.md) and [local development](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally.md).
 
@@ -70,7 +70,7 @@ This meant I needed to fix the following files:
 
 So far, one of the more frustrating development environments that I've had to set up. I really wish there was an easier way for the project to run on Windows 10 Home. That being said, you can read about my exploits here.
 
-That long story is best told separately; but you should know that it compiled successfully and I was greeted with a working site:
+That long story is best told {% post_link triage-fcc-local-dev-setup separately %}; but you should know that it compiled successfully and I was greeted with a working site:
 
 ![Screenshot of successful compilation process.](/images/posts/bugfix/fcc_triage_success.png)
 
@@ -120,17 +120,17 @@ In this particular challenge, the camper is expected to make the page more acces
 
 For each challenge, to familiarize myself with the issue at hand, I try solving the exercise myself. I change the anchor tag in the demo area so it reads as `<a href="">Click here for more information about batteries</a>`. This should fulfill the prompt, right?
 
-[Screenshot of my first attempt to solve the exercise.](/images/posts/bugfix/fcc_challenge1_attempt1.png)
+![Screenshot of my first attempt to solve the exercise.](/images/posts/bugfix/fcc_challenge1_attempt1.png)
 
 Wrong!
 
-[Screenshot of my first failure in solving the exercise.](/images/posts/bugfix/fcc_challenge1_fail1.png)
+![Screenshot of my first failure in solving the exercise.](/images/posts/bugfix/fcc_challenge1_fail1.png)
 
 Instead of passing, the test has failed because 'Click here' is still contained by the anchor tag. The platform gives back some helpful feedback for users who might be stuck solving a problem. If the test information doesn't make it clear enough, users can watch a video, ask for help, or get a hint in order to make progress. Campers can even start the process over by reseting all of the code back to the original state.
 
 Now, I don't want to be wrong, so, I move the tag to the right place and submit once more.
 
-[Screenshot of my first success in solving the exercise.](/images/posts/bugfix/fcc_challenge1_success1.png)
+![Screenshot of my first success in solving the exercise.](/images/posts/bugfix/fcc_challenge1_success1.png)
 
 Seeing as all of the tests have passed, I'm greeted by a big, green checkmark. How fulfilling! If I can complete the challenge, what is it that I'll need to bugfix next!
 
@@ -268,3 +268,5 @@ So I made a quick edit, solved another challenge, staged and commit my changes, 
 ![Image of pull request pending build process approval.](/images/posts/bugfix/fcc_pull4.png)
 
 With that, this bug is officially squashed. (Pending their acceptance of my pull requests, of course).
+
+![Image of pull request passing Travis CI build process.](/images/post/bugfix/fcc_pull7.png)

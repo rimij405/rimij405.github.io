@@ -56,7 +56,7 @@ I use command line git through git bash; on top of that, I'm using [Cmder](https
 
 ![Screen capture of me typing the following paragraph into Visual Studio.](/images/posts/bugfix/fcc_vscode.gif)
 
-I write my code in the same IDE I write my blog posts: [Visual Studio Code](https://code.visualstudio.com). Microsoft might not be known for it's open source technology (yet), but, VS Code is licensed under the [MIT Expat](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt) agreement and can be found on their [GitHub](https://github.com/Microsoft/vscode) repository.
+I write my code in the same IDE I write my blog posts: [Visual Studio Code](https://code.visualstudio.com). Microsoft might not be known for it's open source technology (yet), but, VS Code is licensed under the [MIT License](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt) agreement and it can be found on their [GitHub](https://github.com/Microsoft/vscode) repository.
 
 ### Cloning a copy of freeCodeCamp ###
 
