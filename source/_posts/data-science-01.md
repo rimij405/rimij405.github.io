@@ -1,13 +1,15 @@
 ---
 title: Journey into Python
-categories: 
-- blog
-- data-science
 tags:
-- data-science
-- python
-- python3
+  - data-science
+  - python
+  - python3
+categories:
+  - blog
+  - data-science
+date: 2019-04-22 16:25:10
 ---
+
 
 # Data Science 001 - Journey into Python #
 
