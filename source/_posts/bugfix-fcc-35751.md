@@ -292,3 +292,11 @@ One of the pull requests has been merged into the project's main branch!
 Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810)):
 
 ![Screenshot of successful merge.](/images/posts/bugfix/fcc_merge2.png)
+
+## Updated April 29th, 2019 - 8:30 AM ##
+
+The other pull request has been merged into the project's main branch!
+
+Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809)):
+
+![Screenshot of successful merge](/images/posts/bugfix/fcc_pull10.png)
