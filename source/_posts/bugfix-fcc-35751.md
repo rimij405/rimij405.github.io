@@ -297,6 +297,6 @@ Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35810))
 
 The other pull request has been merged into the project's main branch!
 
-Pull Request ([#35810](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809)):
+Pull Request ([#35809](https://github.com/freeCodeCamp/freeCodeCamp/pull/35809)):
 
 ![Screenshot of successful merge](/images/posts/bugfix/fcc_pull10.png)
