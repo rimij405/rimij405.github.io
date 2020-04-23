@@ -2,114 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://rimij405.github.io/blog/hfoss/commarchreport/</loc>
+    <loc>https://rimij405.github.io/about/index.html</loc>
     
-    <lastmod>2019-03-22T06:37:03.937Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/images/posts/brickhack-v/hacker_ceb.html</loc>
-    
-    <lastmod>2019-03-22T03:36:53.415Z</lastmod>
+    <lastmod>2020-04-23T15:17:25.836Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/hfoss/waiting-for-godot/</loc>
+    <loc>https://rimij405.github.io/projects/index.html</loc>
     
-    <lastmod>2019-03-22T03:36:53.410Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/blog/hfoss/reading-oss-arch/</loc>
-    
-    <lastmod>2019-03-22T03:36:53.409Z</lastmod>
+    <lastmod>2020-04-23T13:53:07.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/quiz-1/</loc>
+    <loc>https://rimij405.github.io/images/posts/brickhack-v/hacker_ceb.html</loc>
     
-    <lastmod>2019-03-22T03:36:53.408Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</loc>
-    
-    <lastmod>2019-03-22T03:36:53.408Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.877Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/cybersecurity/mission-authentication/</loc>
+    <loc>https://rimij405.github.io/freeCodeCamp/triage-fcc-local-dev-setup/</loc>
     
-    <lastmod>2019-03-22T03:36:53.407Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/blog/hfoss/lit-review-3/</loc>
-    
-    <lastmod>2019-03-22T03:36:53.405Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.873Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/hfoss/lit-review-2/</loc>
+    <loc>https://rimij405.github.io/blog/hfoss/waiting-for-godot/</loc>
     
-    <lastmod>2019-03-22T03:36:53.405Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/blog/hfoss/lit-review-1/</loc>
-    
-    <lastmod>2019-03-22T03:36:53.404Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.873Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/hfoss/hello-world/</loc>
+    <loc>https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/</loc>
     
-    <lastmod>2019-03-22T03:36:53.403Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/</loc>
-    
-    <lastmod>2019-03-22T03:36:53.401Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.872Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/hfoss/commarchteam/</loc>
+    <loc>https://rimij405.github.io/blog/hfoss/quicklook-scoop/</loc>
     
-    <lastmod>2019-03-22T03:36:53.400Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rimij405.github.io/blog/hfoss/brickhack-v/</loc>
-    
-    <lastmod>2019-03-22T03:36:53.398Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/about/index.html</loc>
+    <loc>https://rimij405.github.io/blog/hfoss/quicklook-sgos/</loc>
     
-    <lastmod>2019-01-25T04:00:39.340Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rimij405.github.io/blog/hfoss/next-steps/</loc>
+    <loc>https://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</loc>
     
-    <lastmod>2019-01-25T03:38:14.694Z</lastmod>
+    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/quiz-1/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/reading-oss-arch/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/quicklook-openal/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.859Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/next-steps/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.856Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/lit-review-1/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.850Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/lit-review-2/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.850Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/lit-review-3/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.850Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/cybersecurity/mission-authentication/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.850Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/finalteam/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.849Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/global-game-jam-2019/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.849Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/hello-world/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.849Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/discourse-osculture/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.848Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/commarchteam/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/commarchreport/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.841Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/freeCodeCamp/commarch-fcc/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.824Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/brickhack-v/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.823Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/freeCodeCamp/bugfix-fcc-35751/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.823Z</lastmod>
     
   </url>
   

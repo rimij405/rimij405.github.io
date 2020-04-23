@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="I Can’t Dock Here.During my journey to the center of the (core) bugfix, I came across some disheartening issues regarding Docker and Windows 10 Home. For the most part, Windows 10 Professional, Window">
+<meta name="keywords" content="bugfix,education,open-source,docker,triage">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Triage - Troubleshooting Docker on WSL">
+<meta property="og:url" content="https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/index.html">
+<meta property="og:site_name" content="thelionsredmane">
+<meta property="og:description" content="I Can’t Dock Here.During my journey to the center of the (core) bugfix, I came across some disheartening issues regarding Docker and Windows 10 Home. For the most part, Windows 10 Professional, Window">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://rimij405.github.io/images/posts/triage/docker_triage.png">
+<meta property="og:updated_time" content="2020-04-23T11:51:24.872Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Triage - Troubleshooting Docker on WSL">
+<meta name="twitter:description" content="I Can’t Dock Here.During my journey to the center of the (core) bugfix, I came across some disheartening issues regarding Docker and Windows 10 Home. For the most part, Windows 10 Professional, Window">
+<meta name="twitter:image" content="https://rimij405.github.io/images/posts/triage/docker_triage.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Triage - Troubleshooting Docker on WSL</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/freeCodeCamp/triage-fcc-local-dev-setup/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/freeCodeCamp/bugfix-fcc-35751/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&text=Triage - Troubleshooting Docker on WSL"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&is_video=false&description=Triage - Troubleshooting Docker on WSL"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Triage - Troubleshooting Docker on WSL&body=Check out this article: https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&name=Triage - Troubleshooting Docker on WSL&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#I-Can’t-Dock-Here"><span class="toc-number">1.</span> <span class="toc-text">I Can’t Dock Here.</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Workaround-Attempts"><span class="toc-number">1.2.</span> <span class="toc-text">The Workaround Attempts</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Brute-Force-Approach"><span class="toc-number">1.2.1.</span> <span class="toc-text">The Brute Force Approach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-Toolbox"><span class="toc-number">1.2.2.</span> <span class="toc-text">Docker Toolbox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Subsystem-for-Linux"><span class="toc-number">1.2.3.</span> <span class="toc-text">Windows Subsystem for Linux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Host-via-VirtualBox"><span class="toc-number">1.2.4.</span> <span class="toc-text">Host via VirtualBox</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Triage - Troubleshooting Docker on WSL
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">thelionsredmane</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-04-06T00:38:45.000Z" itemprop="datePublished">2019-04-05</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a> › <a class="category-link" href="/categories/freeCodeCamp/">freeCodeCamp</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/bugfix/">bugfix</a>, <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/education/">education</a>, <a class="tag-link" href="/tags/open-source/">open-source</a>, <a class="tag-link" href="/tags/triage/">triage</a>
+    </div>
+
+
+      <span itemprop="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+    </div>
+  </header>
+  
+<div class="article-gallery">
+    
+    <a class="gallery-item" href="/images/posts/triage/docker_triage.png" rel="gallery_ck9d3qn7j001tkkyc920msqt7">
+        <img src="/images/posts/triage/docker_triage.png" itemprop="image">
+    </a>
+    
+</div>
+
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="I-Can’t-Dock-Here"><a href="#I-Can’t-Dock-Here" class="headerlink" title="I Can’t Dock Here."></a>I Can’t Dock Here.</h1><p>During my journey to the center of the (core) bugfix, I came across some disheartening issues regarding Docker and Windows 10 Home. For the most part, Windows 10 Professional, Windows 10 Enterprise, and Windows 10 Education are all unaffected by this problem. <a href="/freeCodeCamp/bugfix-fcc-35751/" title="I discovered this while trying to build freeCodeCamp locally for a bugfix.">I discovered this while trying to build freeCodeCamp locally for a bugfix.</a></p>
+<p>As full disclosure, this post does <strong>not contain a solution</strong> for the issue that caused the Docker installation process to fail. This post has been made to highlight my process and share the steps I have taken, to help others who come across it.</p>
+<!-- Read more -->
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>The most recent and recommended version of Docker is <a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank" rel="noopener">Docker Desktop for Windows</a>. For native Windows (and for this operating system alone) it requires Hyper-V virtualization. I am running on a copy of Windows 10 Home - the one distribution that Microsoft provides that doesn’t include this feature.</p>
+<p>While I could get a copy of Windows 10 <em>Education</em> from my <a href="https://www.rit.edu" target="_blank" rel="noopener">university</a>, this wouldn’t be time- or cost-effective. If I could solve the problem on my own desktop, it would be a benefit to myself and others. Besides, freeCodeCamp’s contributors wanted feedback on their <a href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally-using-docker.md" target="_blank" rel="noopener">guide to using Docker in order to build the codebase</a>.</p>
+<p>When I opened up the guide to setting freeCodeCamp up locally, I was greeted with this:</p>
+<!-- markdownlint-disable MD034 -->
+<blockquote><!-- markdownlint-enable MD034 -->
+<p>As of 8 March 2019, please consider helping us test our new guide on how to <a href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally-using-docker.md" target="_blank" rel="noopener">setup freeCodeCamp locally using Docker</a> instead of using this guide. It should result in fewer, if not zero, errors but we won’t know until enough devs try it.</p>
+<footer><strong>Todd Chaffee (@tchaffee) & Mrugesh Mohapatra (@raisedadead), freeCodeCamp</strong><cite><a href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally.md" target="_blank" rel="noopener">Set up freeCodeCamp locally</a></cite></footer></blockquote>
+<p>I had never used Docker before, so this seemed as good a time as any.</p>
+<h2 id="The-Workaround-Attempts"><a href="#The-Workaround-Attempts" class="headerlink" title="The Workaround Attempts"></a>The Workaround Attempts</h2><p>From the <code>Docker</code> guide, we are required to install the stable version of the <a href="https://docs.docker.com/install/" target="_blank" rel="noopener">community edition</a>, and the latest LTS version of <a href="http://nodejs.org/" target="_blank" rel="noopener"><code>Node.js</code></a>. (We also need <code>npm</code>, but that comes bundled with Node). I was able to install Node.js (bringing npm alongside it) with no issue. Since I’m a no-good, very bad Windows user, I needed to install the <a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank" rel="noopener">Docker Desktop for Windows</a>, but, when it came to Docker, I quickly found out about the Hyper-V dependency - one that I couldn’t address given my operating system.</p>
+<p>In order to install the correct version of Docker, I would need to install and enable <a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v" target="_blank" rel="noopener">Hyper-V</a> on my system. However, VirtualBox will not work as long as Hyper-V virtualization is enabled. It seemed that <a href="https://superuser.com/questions/1208850/why-virtualbox-or-vmware-can-not-run-with-hyper-v-enabled-windows-10" target="_blank" rel="noopener">I would no longer be able to use my distributions through VirtualBox or VMWare</a>. This, however, was out of date: as of VirtualBox 6.0.0, the releases for VirtualBox (see: <a href="https://www.virtualbox.org/wiki/Changelog" target="_blank" rel="noopener">VirtualBox 6.0 changelog</a>) would include support for the Windows Hypervisor Platform accelerator (WHPX) - the same one that QEMU (see: <a href="https://wiki.qemu.org/ChangeLog/2.12" target="_blank" rel="noopener">QEMU 2.12 changelog</a>) uses. This is, however, experimental. There is some limited support for VirtualBox’s ability to run on systems parallel to Hyper-V, but, you’re <a href="https://forums.virtualbox.org/viewtopic.php?f=6&amp;t=90853" target="_blank" rel="noopener">mileage may vary</a></p>
+<p>I wasn’t the only one interested in running Hyper-V and VirtualBox on the same system. <a href="https://derekgusoff.wordpress.com/2012/09/05/run-hyper-v-and-virtualbox-on-the-same-machine/" target="_blank" rel="noopener">Derek Gusoff</a> found that one could use the <code>bcdedit</code> command in windows in order to edit the <code>hypervisorlaunchtype</code> property to toggle Hyper-V.</p>
+<p>If you set it to <code>off</code> and reboot, you’ll be able to use VirtualBox:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /<span class="built_in">set</span> hypervisorlaunchtype off</span><br></pre></td></tr></table></figure>
+<p>If you set it to <code>auto</code> and reboot, you’ll be able to use Hyper-V once again:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /<span class="built_in">set</span> hypervisorlaunchtype auto</span><br></pre></td></tr></table></figure>
+<p>This is remarkably close to Microsoft’s official solution as well: when you want to use VirtualBox, turn Hyper-V off and reboot.</p>
+<p>You can do it through the control panel:</p>
+<p><img src="/images/posts/bugfix/fcc_hyper-v.png" alt="Screenshot of deactivating Hyper-V."></p>
+<p>Or through a neat little command, if executed with elevated user permissions:</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor</span><br></pre></td></tr></table></figure>
+<p>I could toggle back and forth, but, rebooting takes time and I’d like to avoid having a schedule where I must restart my machine just in order to get work done - I don’t dual-boot operating systems for a reason; it’s inconvienient.</p>
+<p>The problem: I use <a href="https://www.virtualbox.org/" target="_blank" rel="noopener">VirtualBox</a> for development of <a href="https://wiki.sugarlabs.org/go/Welcome_to_the_Sugar_Labs_wiki" target="_blank" rel="noopener">Sugar</a> activities on a <a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick" target="_blank" rel="noopener">Fedora Spin of Sugar-on-a-Stick</a>. If I can’t run VirtualBox, I’m going to have a bad time.</p>
+<p>It was time to find a workaround.</p>
+<h3 id="The-Brute-Force-Approach"><a href="#The-Brute-Force-Approach" class="headerlink" title="The Brute Force Approach"></a>The Brute Force Approach</h3><p>I figured there was no harm in trying to install the latest software even though I had none of the proper dependencies installed. The good thing is that Docker claimed that Hyper-V would be installed alongside Docker, if we ran the installation manager. The bad thing? I don’t like the fact that you have to log in to get the installer - this takes valuable time!</p>
+<p><img src="/images/posts/bugfix/fcc_docker-install.png" alt="Screenshot of downloading Docker installer."></p>
+<p>After the registration, password generation, captcha, refreshing, clicking on confirmation codes, email verification, and signing in multiple times just to get back to the download page, it felt bad to see this all fall apart. The problem with this approach started as soon as I got to the download page. Installing Docker Desktop for Windows would automatically install Hyper-V - but only if I had a qualifying version of Windows 10 that could support it. This means that <em>Home</em> users have no modern support for using Docker on their systems.</p>
+<p>The fact that VirtualBox couldn’t run parallel to Hyper-V suddenly <em>didn’t</em> matter. The problem, specific to my version of the Windows 10 operating system, means that Hyper-V couldn’t be installed on my machine, even if I wanted to be able to use it. The Docker installer’s first check is to see if your machine has Hyper-V enabled.</p>
+<p><img src="/images/posts/bugfix/fcc_docker-noinstall.png" alt="Screenshot of a failed Docker installer."></p>
+<p><em>Bummer</em>. Even if I didn’t have the need to use VirtualBox, I still wouldn’t have been able to get around Docker Desktop’s need for Hyper-V.</p>
+<h3 id="Docker-Toolbox"><a href="#Docker-Toolbox" class="headerlink" title="Docker Toolbox"></a>Docker Toolbox</h3><p>I didn’t give up hope just yet. At this point, I could have turned back and tried with freeCodeCamp’s other installation strategy (as I would later do), but, I figured it didn’t hurt to try Docker’s <a href="https://docs.docker.com/toolbox/overview/" target="_blank" rel="noopener">legacy installer</a>.<br><img src="/images/posts/bugfix/fcc_docker-toolbox-notes.png" alt="Screenshot of documentation that says: &quot;Legacy desktop solution. Docker Toolbox is for older Mac and Windows systems that do not meet the requirements of Docker Desktop for Mac and Docker Desktop for Windows. We recommend updating to the newer applications, if possible.&quot;"></p>
+<p>“I don’t know if this will work, but it doesn’t hurt to try.” - Me, trying out Docker Toolbox. Basically, Toolbox uses VirtualBox instead of Microsoft’s native Hyper-V. There’s nothing guaranteeing it will run the server in the way we want it to, but, it’s worth a shot.</p>
+<p><img src="/images/posts/bugfix/fcc_docker-toolbox-install.png" alt="Screenshot of shortcuts for Docker Toolbox, after installation."></p>
+<p>I followed the <a href="https://docs.docker.com/toolbox/toolbox_install_windows/" target="_blank" rel="noopener">installation</a> instructions for Docker Toolbox (unchecking the already installed VirtualBox and Git from Windows programs when prompted by the installer).</p>
+<p><img src="/images/posts/bugfix/fcc_docker-toolbox-success.png" alt="Screenshot of Docker Toolbox terminal after verifying installation."></p>
+<p>Then I tested out the <code>docker run hello-world</code> command…</p>
+<p><img src="/images/posts/bugfix/fcc_docker-toolbox-success-2.png" alt="Screenshot of Docker Toolbox terminal after running docker run hello world."></p>
+<p>…and the <code>docker run -it ubuntu bash</code> command.</p>
+<p><img src="/images/posts/bugfix/fcc_docker_ubuntu.png" alt="Screenshot of Docker Toolbox terminal after running docker run -it ubuntu bash."></p>
+<p>For the Docker Toolbox installation, we would also need to change the <code>DOCKER_HOST_LOCATION</code> property in the <code>.env</code> file to the output from the <code>docker-machine ip</code> command. Unfortunately, getting up to this point doesn’t guarantee success.</p>
+<p>When I tried running docker from PowerShell, it was clear that I wasn’t getting the support I needed. Attempting to build the project with the installed docker tools sent back error after error. It was easy enough to get hello-world running, but, I don’t want to have to modify the installation script used in freeCodeCamp’s project.json just to get off the ground.</p>
+<p><em>Sigh</em>. On to the next one.</p>
+<h3 id="Windows-Subsystem-for-Linux"><a href="#Windows-Subsystem-for-Linux" class="headerlink" title="Windows Subsystem for Linux"></a>Windows Subsystem for Linux</h3><p>I decided to take a shot at installing <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank" rel="noopener">Windows Subsystem for Linux</a> on my system. (Finally, a feature that all Windows 10 users can try). It seemed pretty straightforward. I tried installing Docker by following this <a href="https://medium.com/devopslinks/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa" target="_blank" rel="noopener">guide</a> from <a href="https://medium.com/@riomartinez" target="_blank" rel="noopener">Rio Martinez</a>.</p>
+<p>I uninstalled Docker Toolbox using Docker’s complete uninstallation steps and gave my system a fresh reboot. From there, I installed the optional WSL feature through PowerShell in order to acitvate the subsystem:</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</span><br></pre></td></tr></table></figure>
+<p>After searching for a Linux Distro that was compatible with Docker, I settled on Canonical Group Ltd.’s <a href="https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6" target="_blank" rel="noopener">Ubuntu version 18.04 LTS</a>. Ubuntu on Windows seemed promising. I launched the new bash terminal after installing, created my user account, and updated my distro’s packages with:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;&amp; sudo apt upgrade</span><br></pre></td></tr></table></figure>
+<p>All seemed to be going well, but, by the time I get to the end of it I had errors appearing due to the way Windows mounted WSL to the system. Officially, Docker states that they don’t support the Windows Subsystem for Linux. Ugh - so close yet so far away.</p>
+<h3 id="Host-via-VirtualBox"><a href="#Host-via-VirtualBox" class="headerlink" title="Host via VirtualBox"></a>Host via VirtualBox</h3><p>The largest problem is that Docker doesn’t yet support the Windows for Subsystem Linux - I made a judgement call to stop trying to figure it out at this point, but, I have my hunches as to what would work should you find yourself in this situation.</p>
+<p>I recommend you look at what (FLOSS) operation systems (besides Windows) officially support Docker and create a guest in VirtualBox based on that distro. If the distro has the official support, if you can get it to run on your system, then you should finally be able to get Docker up and running. There may be some caveats, however.</p>
+<p>Technically, my instance of OpenSUSE should have been able to run Docker, but, much of my troubleshooting moved away from being about Docker and more towards fixing my setup for VirtualBox’s network adapter. It’s a time-consuming process and one that I believe represents an edge case. Surely, most others with Hyper-V on their systems would never have to go down this route, assuming Docker works as it says it does.</p>
+<p>For now, I suggest using Ubuntu 16.04 LTS - the latest ‘approved’ distro that Docker claims to support in an official capacity. For now, I’ll be building my code the old fashioned way - setting up a backend with an instance of MongoDB giving persistence to a Node.js server.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#I-Can’t-Dock-Here"><span class="toc-number">1.</span> <span class="toc-text">I Can’t Dock Here.</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Workaround-Attempts"><span class="toc-number">1.2.</span> <span class="toc-text">The Workaround Attempts</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Brute-Force-Approach"><span class="toc-number">1.2.1.</span> <span class="toc-text">The Brute Force Approach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-Toolbox"><span class="toc-number">1.2.2.</span> <span class="toc-text">Docker Toolbox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Subsystem-for-Linux"><span class="toc-number">1.2.3.</span> <span class="toc-text">Windows Subsystem for Linux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Host-via-VirtualBox"><span class="toc-number">1.2.4.</span> <span class="toc-text">Host via VirtualBox</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&text=Triage - Troubleshooting Docker on WSL"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&is_video=false&description=Triage - Troubleshooting Docker on WSL"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Triage - Troubleshooting Docker on WSL&body=Check out this article: https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&title=Triage - Troubleshooting Docker on WSL"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/&name=Triage - Troubleshooting Docker on WSL&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

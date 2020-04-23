@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="OpenALOpenAL is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in open-API not open-source. OpenAL, like OpenGL, attempts to avoid bei">
+<meta name="keywords" content="open-source,class,game development,quicklook,audio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quicklook: FLOSS Alternatives to OpenAL">
+<meta property="og:url" content="https://rimij405.github.io/blog/hfoss/quicklook-openal/index.html">
+<meta property="og:site_name" content="thelionsredmane">
+<meta property="og:description" content="OpenALOpenAL is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in open-API not open-source. OpenAL, like OpenGL, attempts to avoid bei">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-04-23T11:51:24.859Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Quicklook: FLOSS Alternatives to OpenAL">
+<meta name="twitter:description" content="OpenALOpenAL is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in open-API not open-source. OpenAL, like OpenGL, attempts to avoid bei">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Quicklook: FLOSS Alternatives to OpenAL</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/freeCodeCamp/commarch-fcc/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/blog/hfoss/discourse-osculture/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://rimij405.github.io/blog/hfoss/quicklook-openal/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&text=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&is_video=false&description=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Quicklook: FLOSS Alternatives to OpenAL&body=Check out this article: https://rimij405.github.io/blog/hfoss/quicklook-openal/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&name=Quicklook: FLOSS Alternatives to OpenAL&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OpenAL"><span class="toc-number">1.</span> <span class="toc-text">OpenAL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenAL-Soft"><span class="toc-number">1.1.</span> <span class="toc-text">OpenAL Soft</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality"><span class="toc-number">1.1.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions"><span class="toc-number">1.1.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Port-Audio"><span class="toc-number">1.2.</span> <span class="toc-text">Port Audio</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RtAudio"><span class="toc-number">1.3.</span> <span class="toc-text">RtAudio</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality-2"><span class="toc-number">1.3.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#libsndfile"><span class="toc-number">1.4.</span> <span class="toc-text">libsndfile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality-3"><span class="toc-number">1.4.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions-3"><span class="toc-number">1.4.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Quicklook: FLOSS Alternatives to OpenAL
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">thelionsredmane</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-04-03T16:19:21.000Z" itemprop="datePublished">2019-04-03</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/audio/">audio</a>, <a class="tag-link" href="/tags/class/">class</a>, <a class="tag-link" href="/tags/game-development/">game development</a>, <a class="tag-link" href="/tags/open-source/">open-source</a>, <a class="tag-link" href="/tags/quicklook/">quicklook</a>
+    </div>
+
+
+      <span itemprop="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="OpenAL"><a href="#OpenAL" class="headerlink" title="OpenAL"></a>OpenAL</h1><p><a href="https://www.openal.org/" target="_blank" rel="noopener">OpenAL</a> is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in <em>open-API</em> not <em>open-source</em>. OpenAL, like OpenGL, attempts to avoid being vendor-specific. That’s great for interoperability, but, not so great for the tenets of free software.</p>
+<hr>
+<h2 id="OpenAL-Soft"><a href="#OpenAL-Soft" class="headerlink" title="OpenAL Soft"></a>OpenAL Soft</h2><p><a href="http://openal-soft.org/" target="_blank" rel="noopener">OpenAL Soft</a> is a fork of the OpenAL project, way back from when it was open-source on an SVN repository. OpenAL Soft’s [source] is hosted on GitHub and is provided under the <a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License" target="_blank" rel="noopener">GNU Lesser General Public License</a> (LGPL).</p>
+<h3 id="Functionality"><a href="#Functionality" class="headerlink" title="Functionality"></a>Functionality</h3><p>For the most part, it’s like OpenAL, except for some important differences in terms of support for certain extensions (like it’s lack of support for Vorbis and MP3).</p>
+<h3 id="Contributions"><a href="#Contributions" class="headerlink" title="Contributions?"></a>Contributions?</h3><p>You can get in touch with the developers of OpenAL Soft with the same <a href="https://openal-soft.org/" target="_blank" rel="noopener">mailing list</a> that you would use for OpenAL. Although the OpenAL project itself <em>is</em> free-of-cost, it isn’t open-source. Despite this, the community hasn’t split over a hostile fork - they embrace one another. There are about 35 contributors in total, but, no explicit contribution guides exist. Suggestions are to get in touch with the developers through the mailing list.</p>
+<hr>
+<h2 id="Port-Audio"><a href="#Port-Audio" class="headerlink" title="Port Audio"></a>Port Audio</h2><p><a href="http://www.portaudio.com/" target="_blank" rel="noopener">PortAudio</a>, on the other hand, is a cross-platform, open-source audio I/O library. Originally released under a custom, permissive license, the most recent version was released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener">MIT License</a>.</p>
+<h3 id="Functionality-1"><a href="#Functionality-1" class="headerlink" title="Functionality"></a>Functionality</h3><p>The library itself, “provides a very simple API for recording and/or playing sound using a simple callback function or blocking read/write interface.” Notably, it’s not suggested to use this library for file I/O - it has no support for reading or writing formatted audio files like .wav and .aiff. Instead, </p>
+<h3 id="Contributions-1"><a href="#Contributions-1" class="headerlink" title="Contributions?"></a>Contributions?</h3><p>The project uses <a href="http://www.assembla.com/" target="_blank" rel="noopener">Assembla</a> for hosting its <a href="https://www.assembla.com/spaces/portaudio/git/source" target="_blank" rel="noopener">source</a> via a git repository. If you’re interested in <a href="http://www.portaudio.com/volunteer.html" target="_blank" rel="noopener">contributing</a> to Port Audio, they are seeking experienced ‘C’ audio developers, writers and documentation experts, and engineers with unit testing and continuous integration experience.</p>
+<p>PortAudio maintains a <a href="http://www.portaudio.com/people.html" target="_blank" rel="noopener">partial list of contributors</a> on its website. A <a href="http://www.portaudio.com/contacts.html" target="_blank" rel="noopener">mailing list</a> and its archive is also facilitated through the website. Bug reports can be submitted through their <a href="https://app.assembla.com/spaces/portaudio/tickets/realtime_list" target="_blank" rel="noopener">ticket tracker</a>. </p>
+<hr>
+<h2 id="RtAudio"><a href="#RtAudio" class="headerlink" title="RtAudio"></a>RtAudio</h2><p>[RtAudio] is a set of C++ classes that provide a common, cross-platform API for realtime audio input/output. The RtAudio license is similar (but not the same) as the MIT License. It is, however, undeniably open-source.</p>
+<h3 id="Functionality-2"><a href="#Functionality-2" class="headerlink" title="Functionality"></a>Functionality</h3><p>The library was designed with the following objectives:</p>
+<ul>
+<li>object-oriented C++ design.</li>
+<li>simple, common API across all supported platforms.</li>
+<li>only one source and one header file for easy inclusion in programming projects.</li>
+<li>allow simultaneous multi-api support.</li>
+<li>support dynamic connection of devices.</li>
+<li>provide extensive audio device parameter control.</li>
+<li>allow audio device capability probing.</li>
+<li>automatic internal conversion for data format, channel number representation, (de)interleaving, and byte-swapping.</li>
+</ul>
+<h3 id="Contributions-2"><a href="#Contributions-2" class="headerlink" title="Contributions?"></a>Contributions?</h3><p>You can view the <a href="https://github.com/thestk/rtaudio" target="_blank" rel="noopener">source</a> on RtAudio’s GitHub repository. There are about <a href="https://github.com/thestk/rtaudio/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc" target="_blank" rel="noopener">19 open issues</a> on the project’s issue tracker, with the <a href="https://github.com/thestk/rtaudio/issues/196" target="_blank" rel="noopener">most recent one</a> being written one day prior (at the time of writing this blog post).</p>
+<h2 id="libsndfile"><a href="#libsndfile" class="headerlink" title="libsndfile"></a>libsndfile</h2><p><a href="http://www.mega-nerd.com/libsndfile/" target="_blank" rel="noopener">libsndfile</a>. It’s released under the terms of the GNU Lesser General Public License (LGPL) - you can use libsndfile with any software as long as it’s used as a dynamically loaded library and it abides by a small number of other conditions. </p>
+<h3 id="Functionality-3"><a href="#Functionality-3" class="headerlink" title="Functionality"></a>Functionality</h3><p>libsndfile is a C library for reading and writing files containing sampled audio data. It is designed to allow the reading and writing of many different sampled sound file formats (such as MS Windows WAV and the Apple/SGI AIFF format) through one standard library interface. During read and write operations, formats are seamlessly converted between the format the application program has requested or supplied and the file’s data format.</p>
+<p>This doesn’t playback audio, but, it does the crucial work involved in file I/O and format conversion.</p>
+<h3 id="Contributions-3"><a href="#Contributions-3" class="headerlink" title="Contributions?"></a>Contributions?</h3><p>libsndfile was created by <a href="mailto:erikd@mega-nerd.com" target="_blank" rel="noopener">Erik de Castro Lopo</a>. You can submit bugs by submitting a ticket through the project’s <a href="https://github.com/erikd/libsndfile/issues" target="_blank" rel="noopener">issue tracker</a>. You can find the source <a href="https://github.com/erikd/libsndfile" target="_blank" rel="noopener">here</a>. You can read more about contributing <a href="https://github.com/erikd/libsndfile/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener">here</a>.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OpenAL"><span class="toc-number">1.</span> <span class="toc-text">OpenAL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenAL-Soft"><span class="toc-number">1.1.</span> <span class="toc-text">OpenAL Soft</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality"><span class="toc-number">1.1.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions"><span class="toc-number">1.1.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Port-Audio"><span class="toc-number">1.2.</span> <span class="toc-text">Port Audio</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RtAudio"><span class="toc-number">1.3.</span> <span class="toc-text">RtAudio</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality-2"><span class="toc-number">1.3.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#libsndfile"><span class="toc-number">1.4.</span> <span class="toc-text">libsndfile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functionality-3"><span class="toc-number">1.4.1.</span> <span class="toc-text">Functionality</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Contributions-3"><span class="toc-number">1.4.2.</span> <span class="toc-text">Contributions?</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://rimij405.github.io/blog/hfoss/quicklook-openal/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&text=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&is_video=false&description=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Quicklook: FLOSS Alternatives to OpenAL&body=Check out this article: https://rimij405.github.io/blog/hfoss/quicklook-openal/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&title=Quicklook: FLOSS Alternatives to OpenAL"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://rimij405.github.io/blog/hfoss/quicklook-openal/&name=Quicklook: FLOSS Alternatives to OpenAL&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

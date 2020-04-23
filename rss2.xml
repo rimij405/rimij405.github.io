@@ -3,18 +3,198 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>The Lion&#39;s Red Mane</title>
-    <link>http://rimij405.github.io/</link>
+    <title>thelionsredmane</title>
+    <link>https://rimij405.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>An exploration of thought, code architecture, open source culture, design, development, and more.</description>
-    <pubDate>Fri, 22 Mar 2019 06:37:03 GMT</pubDate>
+    <pubDate>Thu, 23 Apr 2020 11:51:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>Triage - Installing Free Code Camp Locally</title>
+      <link>https://rimij405.github.io/freeCodeCamp/triage-fcc-local-dev-setup/</link>
+      <guid>https://rimij405.github.io/freeCodeCamp/triage-fcc-local-dev-setup/</guid>
+      <pubDate>Tue, 09 Apr 2019 00:35:14 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Why-Build-Local&quot;&gt;&lt;a href=&quot;#Why-Build-Local&quot; class=&quot;headerlink&quot; title=&quot;Why Build Local?&quot;&gt;&lt;/a&gt;Why Build Local?&lt;/h1&gt;&lt;p&gt;Although it
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/freeCodeCamp/triage-fcc-local-dev-setup/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Triage - Troubleshooting Docker on WSL</title>
+      <link>https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/</link>
+      <guid>https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/</guid>
+      <pubDate>Sat, 06 Apr 2019 00:38:45 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;I-Can’t-Dock-Here&quot;&gt;&lt;a href=&quot;#I-Can’t-Dock-Here&quot; class=&quot;headerlink&quot; title=&quot;I Can’t Dock Here.&quot;&gt;&lt;/a&gt;I Can’t Dock Here.&lt;/h1&gt;&lt;p&gt;During
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)</title>
+      <link>https://rimij405.github.io/freeCodeCamp/bugfix-fcc-35751/</link>
+      <guid>https://rimij405.github.io/freeCodeCamp/bugfix-fcc-35751/</guid>
+      <pubDate>Fri, 05 Apr 2019 05:14:25 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Squashing-Bugs-freeCodeCamp-Issue-35751&quot;&gt;&lt;a href=&quot;#Squashing-Bugs-freeCodeCamp-Issue-35751&quot; class=&quot;headerlink&quot; title=&quot;Squashing
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/freeCodeCamp/bugfix-fcc-35751/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>FLOSS in Review: freeCodeCamp</title>
+      <link>https://rimij405.github.io/freeCodeCamp/commarch-fcc/</link>
+      <guid>https://rimij405.github.io/freeCodeCamp/commarch-fcc/</guid>
+      <pubDate>Fri, 05 Apr 2019 03:36:28 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;FLOSS-in-Review-freeCodeCamp&quot;&gt;&lt;a href=&quot;#FLOSS-in-Review-freeCodeCamp&quot; class=&quot;headerlink&quot; title=&quot;FLOSS in Review -
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/freeCodeCamp/commarch-fcc/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Quicklook: FLOSS Alternatives to OpenAL</title>
+      <link>https://rimij405.github.io/blog/hfoss/quicklook-openal/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/quicklook-openal/</guid>
+      <pubDate>Wed, 03 Apr 2019 16:19:21 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;OpenAL&quot;&gt;&lt;a href=&quot;#OpenAL&quot; class=&quot;headerlink&quot; title=&quot;OpenAL&quot;&gt;&lt;/a&gt;OpenAL&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.openal.org/&quot; target=&quot;_blank&quot;
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/blog/hfoss/quicklook-openal/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>The Closing Heart of the Open Source</title>
+      <link>https://rimij405.github.io/blog/hfoss/discourse-osculture/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/discourse-osculture/</guid>
+      <pubDate>Wed, 03 Apr 2019 14:59:19 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;The-Closing-Heart-of-the-Open-Source&quot;&gt;&lt;a href=&quot;#The-Closing-Heart-of-the-Open-Source&quot; class=&quot;headerlink&quot; title=&quot;The Closing Heart
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/blog/hfoss/discourse-osculture/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Quicklook: What&#39;s The Scoop?</title>
+      <link>https://rimij405.github.io/blog/hfoss/quicklook-scoop/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/quicklook-scoop/</guid>
+      <pubDate>Wed, 03 Apr 2019 05:18:07 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;What’s-the-Scoop&quot;&gt;&lt;a href=&quot;#What’s-the-Scoop&quot; class=&quot;headerlink&quot; title=&quot;What’s the Scoop?&quot;&gt;&lt;/a&gt;What’s the Scoop?&lt;/h1&gt;&lt;p&gt;&lt;a
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/blog/hfoss/quicklook-scoop/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Sugarlabs Activity: Team Proposal</title>
+      <link>https://rimij405.github.io/blog/hfoss/finalteam/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/finalteam/</guid>
+      <pubDate>Tue, 02 Apr 2019 05:52:05 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Sugarlabs-Activity-Team-Proposal&quot;&gt;&lt;a href=&quot;#Sugarlabs-Activity-Team-Proposal&quot; class=&quot;headerlink&quot; title=&quot;Sugarlabs Activity - Team
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/blog/hfoss/finalteam/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Quicklook: RIT Student Government Goes Open-Source</title>
+      <link>https://rimij405.github.io/blog/hfoss/quicklook-sgos/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/quicklook-sgos/</guid>
+      <pubDate>Tue, 26 Mar 2019 05:59:48 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;Quicklook-RIT-Student-Government-Goes-Open-Source&quot;&gt;&lt;a href=&quot;#Quicklook-RIT-Student-Government-Goes-Open-Source&quot; class=&quot;headerlink&quot;
+          
+        
+      
+      </description>
+      
+      <comments>https://rimij405.github.io/blog/hfoss/quicklook-sgos/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>Community Architecture Analysis: KDevelop</title>
-      <link>http://rimij405.github.io/blog/hfoss/commarchreport/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/commarchreport/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/commarchreport/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/commarchreport/</guid>
       <pubDate>Fri, 22 Mar 2019 03:43:55 GMT</pubDate>
       <description>
       
@@ -28,13 +208,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/commarchreport/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/commarchreport/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Quicklook: SONY&#39;s Open Source Surprise - OpenColorIO</title>
-      <link>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/quicklook-sony-oss/</guid>
       <pubDate>Wed, 20 Mar 2019 08:46:02 GMT</pubDate>
       <description>
       
@@ -48,13 +228,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/quicklook-sony-oss/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/quicklook-sony-oss/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Read It! The Architecture of Open Source Applications</title>
-      <link>http://rimij405.github.io/blog/hfoss/reading-oss-arch/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/reading-oss-arch/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/reading-oss-arch/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/reading-oss-arch/</guid>
       <pubDate>Wed, 20 Mar 2019 08:24:11 GMT</pubDate>
       <description>
       
@@ -68,13 +248,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/reading-oss-arch/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/reading-oss-arch/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Literature Review #3: NYS Next Generation Mathematics Learning Standards</title>
-      <link>http://rimij405.github.io/blog/hfoss/lit-review-3/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/lit-review-3/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/lit-review-3/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/lit-review-3/</guid>
       <pubDate>Wed, 20 Mar 2019 07:32:31 GMT</pubDate>
       <description>
       
@@ -82,13 +262,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/lit-review-3/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/lit-review-3/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Community Archictecture Analysis: Team Proposal</title>
-      <link>http://rimij405.github.io/blog/hfoss/commarchteam/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/commarchteam/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/commarchteam/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/commarchteam/</guid>
       <pubDate>Wed, 20 Mar 2019 05:52:05 GMT</pubDate>
       <description>
       
@@ -102,13 +282,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/commarchteam/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/commarchteam/#disqus_thread</comments>
     </item>
     
     <item>
       <title>HFOSS - Quiz 1</title>
-      <link>http://rimij405.github.io/blog/quiz-1/</link>
-      <guid>http://rimij405.github.io/blog/quiz-1/</guid>
+      <link>https://rimij405.github.io/blog/quiz-1/</link>
+      <guid>https://rimij405.github.io/blog/quiz-1/</guid>
       <pubDate>Fri, 08 Mar 2019 14:20:14 GMT</pubDate>
       <description>
       
@@ -122,13 +302,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/quiz-1/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/quiz-1/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Literature Review #2: Roads and Bridges</title>
-      <link>http://rimij405.github.io/blog/hfoss/lit-review-2/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/lit-review-2/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/lit-review-2/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/lit-review-2/</guid>
       <pubDate>Mon, 18 Feb 2019 03:16:03 GMT</pubDate>
       <description>
       
@@ -136,13 +316,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/lit-review-2/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/lit-review-2/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Meetup: BrickHack V</title>
-      <link>http://rimij405.github.io/blog/hfoss/brickhack-v/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/brickhack-v/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/brickhack-v/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/brickhack-v/</guid>
       <pubDate>Sun, 17 Feb 2019 17:02:02 GMT</pubDate>
       <description>
       
@@ -156,13 +336,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/brickhack-v/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/brickhack-v/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Waiting for Godot</title>
-      <link>http://rimij405.github.io/blog/hfoss/waiting-for-godot/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/waiting-for-godot/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/waiting-for-godot/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/waiting-for-godot/</guid>
       <pubDate>Tue, 05 Feb 2019 08:38:25 GMT</pubDate>
       <description>
       
@@ -171,13 +351,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/waiting-for-godot/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/waiting-for-godot/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Literature Review #1: Bug Reporting</title>
-      <link>http://rimij405.github.io/blog/hfoss/lit-review-1/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/lit-review-1/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/lit-review-1/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/lit-review-1/</guid>
       <pubDate>Thu, 31 Jan 2019 03:16:03 GMT</pubDate>
       <description>
       
@@ -185,13 +365,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/lit-review-1/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/lit-review-1/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Meetup: Global Game Jam 2019</title>
-      <link>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/global-game-jam-2019/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/global-game-jam-2019/</guid>
       <pubDate>Wed, 30 Jan 2019 17:01:49 GMT</pubDate>
       <description>
       
@@ -205,13 +385,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/global-game-jam-2019/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/global-game-jam-2019/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Mission: Authentication</title>
-      <link>http://rimij405.github.io/blog/cybersecurity/mission-authentication/</link>
-      <guid>http://rimij405.github.io/blog/cybersecurity/mission-authentication/</guid>
+      <link>https://rimij405.github.io/blog/cybersecurity/mission-authentication/</link>
+      <guid>https://rimij405.github.io/blog/cybersecurity/mission-authentication/</guid>
       <pubDate>Fri, 25 Jan 2019 03:09:42 GMT</pubDate>
       <description>
       
@@ -224,13 +404,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/cybersecurity/mission-authentication/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/cybersecurity/mission-authentication/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Next Steps</title>
-      <link>http://rimij405.github.io/blog/hfoss/next-steps/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/next-steps/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/next-steps/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/next-steps/</guid>
       <pubDate>Tue, 22 Jan 2019 06:06:33 GMT</pubDate>
       <description>
       
@@ -238,13 +418,13 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/next-steps/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/next-steps/#disqus_thread</comments>
     </item>
     
     <item>
       <title>It Started With a Bang!</title>
-      <link>http://rimij405.github.io/blog/hfoss/hello-world/</link>
-      <guid>http://rimij405.github.io/blog/hfoss/hello-world/</guid>
+      <link>https://rimij405.github.io/blog/hfoss/hello-world/</link>
+      <guid>https://rimij405.github.io/blog/hfoss/hello-world/</guid>
       <pubDate>Mon, 21 Jan 2019 06:06:33 GMT</pubDate>
       <description>
       
@@ -252,7 +432,7 @@
       
       </description>
       
-      <comments>http://rimij405.github.io/blog/hfoss/hello-world/#disqus_thread</comments>
+      <comments>https://rimij405.github.io/blog/hfoss/hello-world/#disqus_thread</comments>
     </item>
     
   </channel>

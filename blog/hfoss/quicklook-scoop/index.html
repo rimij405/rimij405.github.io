@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="What’s the Scoop?Microsoft’s releasing more open-source software, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell. This isn’t about how PowerShell sucks or how its sourc">
+<meta name="keywords" content="open-source,class,quicklook,shell,powershell,scoop,unlicense,Windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quicklook: What&#39;s The Scoop?">
+<meta property="og:url" content="https://rimij405.github.io/blog/hfoss/quicklook-scoop/index.html">
+<meta property="og:site_name" content="thelionsredmane">
+<meta property="og:description" content="What’s the Scoop?Microsoft’s releasing more open-source software, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell. This isn’t about how PowerShell sucks or how its sourc">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://rimij405.github.io/images/posts/scoop/uac.jpg">
+<meta property="og:updated_time" content="2020-04-23T11:51:24.860Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Quicklook: What&#39;s The Scoop?">
+<meta name="twitter:description" content="What’s the Scoop?Microsoft’s releasing more open-source software, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell. This isn’t about how PowerShell sucks or how its sourc">
+<meta name="twitter:image" content="https://rimij405.github.io/images/posts/scoop/uac.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Quicklook: What&#39;s The Scoop?</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/blog/hfoss/discourse-osculture/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/blog/hfoss/finalteam/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://rimij405.github.io/blog/hfoss/quicklook-scoop/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&text=Quicklook: What&#39;s The Scoop?"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&is_video=false&description=Quicklook: What&#39;s The Scoop?"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Quicklook: What&#39;s The Scoop?&body=Check out this article: https://rimij405.github.io/blog/hfoss/quicklook-scoop/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&name=Quicklook: What&#39;s The Scoop?&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What’s-the-Scoop"><span class="toc-number">1.</span> <span class="toc-text">What’s the Scoop?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-is-this-software"><span class="toc-number">1.1.</span> <span class="toc-text">What is this software?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PowerShell-Problems"><span class="toc-number">1.1.1.</span> <span class="toc-text">PowerShell Problems</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Security"><span class="toc-number">1.1.2.</span> <span class="toc-text">Windows Security</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Why-get-this"><span class="toc-number">1.2.</span> <span class="toc-text">Why get this?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Who-created-this"><span class="toc-number">1.3.</span> <span class="toc-text">Who created this?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Where-can-you-find-it"><span class="toc-number">1.4.</span> <span class="toc-text">Where can you find it?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s-the-license"><span class="toc-number">1.5.</span> <span class="toc-text">What’s the license?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Can-I-contribute"><span class="toc-number">1.6.</span> <span class="toc-text">Can I contribute?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caveats-about-PowerShell"><span class="toc-number">1.7.</span> <span class="toc-text">Caveats about PowerShell</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Quicklook: What&#39;s The Scoop?
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">thelionsredmane</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-04-03T05:18:07.000Z" itemprop="datePublished">2019-04-03</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Windows/">Windows</a>, <a class="tag-link" href="/tags/class/">class</a>, <a class="tag-link" href="/tags/open-source/">open-source</a>, <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/quicklook/">quicklook</a>, <a class="tag-link" href="/tags/scoop/">scoop</a>, <a class="tag-link" href="/tags/shell/">shell</a>, <a class="tag-link" href="/tags/unlicense/">unlicense</a>
+    </div>
+
+
+      <span itemprop="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="What’s-the-Scoop"><a href="#What’s-the-Scoop" class="headerlink" title="What’s the Scoop?"></a>What’s the Scoop?</h1><p><a href="https://opensource.microsoft.com/" target="_blank" rel="noopener">Microsoft’s releasing more open-source software</a>, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell.</p>
+<p>This isn’t about how <a href="https://outsourcedguru.wordpress.com/2016/02/22/why-powershell-sucks-so-badly/comment-page-1/" target="_blank" rel="noopener">PowerShell sucks</a> or how its source has been released under the <a href="https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt" target="_blank" rel="noopener">MIT</a> license so that naysayers can <a href="https://github.com/PowerShell/PowerShell/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a> the very features they believe are missing (or help address the over <a href="https://github.com/PowerShell/PowerShell/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc" target="_blank" rel="noopener">1,800 issues</a> open at the time of writing this blog post). No; this is about making PowerShell better with a Scoop.</p>
+<h2 id="What-is-this-software"><a href="#What-is-this-software" class="headerlink" title="What is this software?"></a>What is this software?</h2><p><a href="https://scoop.sh/" target="_blank" rel="noopener">Scoop</a> is a command-line installer for Windows that was made to help make PowerShell a bit more <em>digestible</em>. Appreciating scoop requires a decent understanding of the context behind PowerShell and the Windows security system in general.</p>
+<h3 id="PowerShell-Problems"><a href="#PowerShell-Problems" class="headerlink" title="PowerShell Problems"></a>PowerShell Problems</h3><p>Microsoft, created PowerShell with cmdlets (<code>command-lets</code>) - lightweight scripts that perform a single function - and created a Verb-Noun naming convention to help reduce <a href="https://docs.microsoft.com/en-us/powershell/scripting/learn/learning-powershell-names?view=powershell-6" target="_blank" rel="noopener">command memorization</a>. This is quite neat if you’re just getting started with terminals, shells, and Windows’ awkward brand of system administration - genuinely, I am a big fan of making things more accessible for new users.</p>
+<p>Nothing’s clearer than a command that says, <code>Stop-Service</code>, and it doesn’t take a senior SysAdmin to understand what a <code>Get</code> Verb command might do to a Noun - good things I’m sure! However, the trade off tends to work against developers who <strong>do</strong> begin to memorize the more frequently used commands. </p>
+<p>PowerShell’s are quite literally <em>verbose</em>. While some commands have aliases they aren’t necessarily the most familiar. <code>Get-ChildItem</code> is <a href="https://www.pdq.com/powershell/" target="_blank" rel="noopener">listed as the command that</a>, “gets the items and child items in one or more specified locations.” It’s aliases? <code>dir</code>, <code>gci</code>, and <code>ls</code>.</p>
+<p>Most other commands, however, might be clear and transparent in meaning - but they lack any reasonable alias. No Unix developer is going to spend time configuring their aliases in Windows PowerShell when they can simply boot up <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank" rel="noopener">Linux Bash on Windows</a>.</p>
+<p>Scoop helps by providing familiar tools from the bash environment and making them available to PowerShell. For example, <code>scoop install curl</code> will allow you to use the <code>curl</code> tool on PowerShell under your user account. </p>
+<p>What does vanilla PowerShell do? <a href="https://superuser.com/questions/344927/powershell-equivalent-of-curl#comment995042_591311" target="_blank" rel="noopener">It has aliased</a> the <code>Invoke-RestMethod</code> cmdlet as <code>curl</code> and <code>wget</code> while utilizing an entirely different syntax.</p>
+<p>Don’t want to use the cmdlet? The related PowerShell commands aren’t much better:<br><code>(New-Object System.Net.WebClient).DownloadString(&quot;http://www.example.com/hello-world.html&quot;,&quot;C:\hello-world.html&quot;)</code>.</p>
+<p>Speaking of which…</p>
+<h3 id="Windows-Security"><a href="#Windows-Security" class="headerlink" title="Windows Security"></a>Windows Security</h3><p>Want to install something in Windows? I hope your pointer finger is ready.</p>
+<p><img src="/images/posts/scoop/uac.jpg" alt="Image of a User Access Control dialogue box on a Windows system."><br><em>When I’m not on the internet, I don’t expect pop-ups.</em></p>
+<p>Introduced with Windows Vista, the User Account Control (UAC) is a part of Windows’ authentication and security suite. In the great scheme of things, this is the force behind the dialogue boxes that will interrupt your mojo whenever you try to make sure your installer isn’t employing any <a href="https://en.wikipedia.org/wiki/Dark_pattern" target="_blank" rel="noopener">dark patterns</a>.</p>
+<p>There is no way to turn off UAC’s pop-up functionality on Windows. Scoop, however, is not like PowerShell and it certainly is not like Windows. It doesn’t concern itself with things that it doesn’t need to care about.</p>
+<p>See, scoop understands something that all good Unix developers understand: you don’t need to sudo to install every little thing on your system.</p>
+<p>The <a href="https://github.com/lukesampson/scoop/tree/master/bucket" target="_blank" rel="noopener">collections</a> of <a href="https://github.com/lukesampson/scoop-extras" target="_blank" rel="noopener">programs</a> that scoop provides an easy installation for are filled with examples where this is true. </p>
+<p>I do not and I <strong>should not</strong> be giving administrative access and permissions to installers for most programs. Most applications don’t need to be installed to the <code>C:Program Files</code> directories - there are many that can operate in a standalone (even portable) capacity.</p>
+<h2 id="Why-get-this"><a href="#Why-get-this" class="headerlink" title="Why get this?"></a>Why get this?</h2><p>Besides bettering your life, scoop is also a scriptable framework. It’s encouraged if you’re looking for a way to consistently setup environments on Windows systems that have access to PowerShell.</p>
+<h2 id="Who-created-this"><a href="#Who-created-this" class="headerlink" title="Who created this?"></a>Who created this?</h2><p>The original creator <a href="https://github.com/lukesampson" target="_blank" rel="noopener">@lukesampson</a> hasn’t submitted a new commit since mid-2017. At 787 commits, he still stands as the second biggest contributor.</p>
+<p>The core developer, <a href="https://github.com/lukesampson/scoop/commits?author=r15ch13" target="_blank" rel="noopener">@r15ch13</a>, on the other hand <strong>started</strong> in mid-2017 and now has over 5,610 commits.</p>
+<p>It doesn’t take a <a href="https://github.com/tomheon/git_by_a_bus" target="_blank" rel="noopener">git by a bus</a> to see that the wealth of knowledge about this project is not distributed enough to keep it from perishing should @r15ch13 decide not to continue development.</p>
+<p>Get it while you can.</p>
+<h2 id="Where-can-you-find-it"><a href="#Where-can-you-find-it" class="headerlink" title="Where can you find it?"></a>Where can you find it?</h2><p>You can find scoop’s source on its <a href="https://github.com/lukesampson/scoop" target="_blank" rel="noopener">github repository</a>.</p>
+<h2 id="What’s-the-license"><a href="#What’s-the-license" class="headerlink" title="What’s the license?"></a>What’s the license?</h2><p>Scoop is actually ‘licensed’ under the “<a href="https://unlicense.org/" target="_blank" rel="noopener">Unlicense</a>“. This is a specific way for developers to dedicate work to the public domain. The license itself combines a copyright waiver similar to that from the public domain SQLite project with the no-warranty statement from the MIT/X11 license.</p>
+<p>It’s the antithesis to ‘all rights reserved’ - this license is a bit of a ‘<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">no rights reserved</a>‘ situation.</p>
+<h2 id="Can-I-contribute"><a href="#Can-I-contribute" class="headerlink" title="Can I contribute?"></a>Can I contribute?</h2><p>Since the time of writing, the last pull request was created 8 hours ago; it’s very active. In fact, the one disadvantage is that it’s become a burden on the current community.</p>
+<p>GitHub contributor <a href="https://github.com/h404bi" target="_blank" rel="noopener">@h404bi</a> submitted an <a href="https://github.com/lukesampson/scoop/issues/2939" target="_blank" rel="noopener">issue</a> last New Year’s Eve asking for the community to consider the fact that Scoop never releases a version that is ‘explicitly’ stable. The other developers agreed.</p>
+<p>As it stands, they have yet to finalize a new workflow but their main challenge is separating the buckets - the name given to collections holding program installation settings and metadata - from the core of the program. </p>
+<p>It’s a relatively small codebase and the documentation is more than enough for someone interested in getting started with how it works.</p>
+<h2 id="Caveats-about-PowerShell"><a href="#Caveats-about-PowerShell" class="headerlink" title="Caveats about PowerShell"></a>Caveats about PowerShell</h2><p>It is silly to realistically expect PowerShell to work like Bash. Even if the Verb-Noun dynamic gets tiresome, PowerShell is far from the only option available to users on Windows systems and people are always encouraged to use what they know best.</p>
+<p>PowerShell is open-source; and so is scoop. These are both examples of what community development can support. The best part is the freedom to modify your environment however you see fit…</p>
+<hr>
+<p>…That is, until you remember that Windows 10 is still a proprietary operating system and that nice OpenSUSE distro I have running a KDE Plasma desktop environment is sweet, sweet FLOSS.</p>
+<p>After all things considered, perhaps it is with a bit of irony that in order to get scoop on Windows, you’ll need to be prepared to install it using plain old PowerShell.</p>
+<p><code>iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)</code></p>
+<p>(And you might come across a UAC error when you try this too).</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What’s-the-Scoop"><span class="toc-number">1.</span> <span class="toc-text">What’s the Scoop?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-is-this-software"><span class="toc-number">1.1.</span> <span class="toc-text">What is this software?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PowerShell-Problems"><span class="toc-number">1.1.1.</span> <span class="toc-text">PowerShell Problems</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Security"><span class="toc-number">1.1.2.</span> <span class="toc-text">Windows Security</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Why-get-this"><span class="toc-number">1.2.</span> <span class="toc-text">Why get this?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Who-created-this"><span class="toc-number">1.3.</span> <span class="toc-text">Who created this?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Where-can-you-find-it"><span class="toc-number">1.4.</span> <span class="toc-text">Where can you find it?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s-the-license"><span class="toc-number">1.5.</span> <span class="toc-text">What’s the license?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Can-I-contribute"><span class="toc-number">1.6.</span> <span class="toc-text">Can I contribute?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caveats-about-PowerShell"><span class="toc-number">1.7.</span> <span class="toc-text">Caveats about PowerShell</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://rimij405.github.io/blog/hfoss/quicklook-scoop/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&text=Quicklook: What&#39;s The Scoop?"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&is_video=false&description=Quicklook: What&#39;s The Scoop?"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Quicklook: What&#39;s The Scoop?&body=Check out this article: https://rimij405.github.io/blog/hfoss/quicklook-scoop/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&title=Quicklook: What&#39;s The Scoop?"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://rimij405.github.io/blog/hfoss/quicklook-scoop/&name=Quicklook: What&#39;s The Scoop?&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/blog/">Blog</a></li>
+         
+          <li><a href="/archives/">Archive</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
