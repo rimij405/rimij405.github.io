@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://rimij405.github.io/about/index.html</loc>
+    <loc>https://rimij405.github.io/freeCodeCamp/bugfix-fcc-35751/</loc>
     
-    <lastmod>2020-04-23T15:17:25.836Z</lastmod>
+    <lastmod>2020-04-23T18:32:08.134Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/freeCodeCamp/triage-fcc-local-dev-setup/</loc>
+    
+    <lastmod>2020-04-23T18:32:08.134Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://rimij405.github.io/projects/index.html</loc>
     
-    <lastmod>2020-04-23T13:53:07.284Z</lastmod>
+    <lastmod>2020-04-23T18:31:54.614Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/about/index.html</loc>
+    
+    <lastmod>2020-04-23T18:31:54.578Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>https://rimij405.github.io/images/posts/brickhack-v/hacker_ceb.html</loc>
     
     <lastmod>2020-04-23T11:51:24.877Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://rimij405.github.io/freeCodeCamp/triage-fcc-local-dev-setup/</loc>
-    
-    <lastmod>2020-04-23T11:51:24.873Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://rimij405.github.io/freeCodeCamp/triage-docker-on-wsl/</loc>
     
     <lastmod>2020-04-23T11:51:24.872Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://rimij405.github.io/blog/hfoss/quicklook-scoop/</loc>
-    
-    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
     
   </url>
   
@@ -73,6 +73,13 @@
   
   <url>
     <loc>https://rimij405.github.io/blog/hfoss/reading-oss-arch/</loc>
+    
+    <lastmod>2020-04-23T11:51:24.860Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://rimij405.github.io/blog/hfoss/quicklook-scoop/</loc>
     
     <lastmod>2020-04-23T11:51:24.860Z</lastmod>
     
@@ -128,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://rimij405.github.io/blog/hfoss/global-game-jam-2019/</loc>
+    <loc>https://rimij405.github.io/blog/hfoss/hello-world/</loc>
     
     <lastmod>2020-04-23T11:51:24.849Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rimij405.github.io/blog/hfoss/hello-world/</loc>
+    <loc>https://rimij405.github.io/blog/hfoss/global-game-jam-2019/</loc>
     
     <lastmod>2020-04-23T11:51:24.849Z</lastmod>
     
@@ -171,13 +178,6 @@
   
   <url>
     <loc>https://rimij405.github.io/blog/hfoss/brickhack-v/</loc>
-    
-    <lastmod>2020-04-23T11:51:24.823Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://rimij405.github.io/freeCodeCamp/bugfix-fcc-35751/</loc>
     
     <lastmod>2020-04-23T11:51:24.823Z</lastmod>
     
