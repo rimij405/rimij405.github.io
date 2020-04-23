@@ -1,0 +1,17 @@
+# Project Format 
+# Project:
+#   name: Project name.
+#   desc: Project description.
+#   url: URL to Project
+#   img: Thumbnail. (Optional).
+
+# All Projects
+
+blog:
+  name: Personal Blog
+  desc: My personal website.
+  url: https://rimij405.github.io/
+  img:
+    src: /images/favicon-192x192.png
+    alt: "Personal Blog"
+  

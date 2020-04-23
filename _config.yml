@@ -10,7 +10,7 @@
 title: The Lion's Red Mane
 subtitle: Developer, designer, and music producer.
 description: An exploration of thought, code architecture, open source culture, design, development, and more.
-keywords: blog,portfolio,resume,projects,hexo
+keywords: blog,portfolio,resume,projects,hexo,react,node
 author: Ian Effendi
 email: effendiian@gmail.com
 language: en
@@ -19,7 +19,7 @@ timezone: America/New_York
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://rimij405.github.io/
+url: https://rimij405.github.io/
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -30,6 +30,7 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
+projects_dir: projects
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -96,18 +97,18 @@ theme_config:
   colorscheme: dark
   rss:
   social_links:
-    github: http://github.com/rimij405
+    github: https://github.com/rimij405
+    twitter: https://www.twitter.com/az019er
     facebook: https://www.facebook.com/effendiian
     linkedin: http://linkedin.com/in/effendiian
-    rss-square: rss2.xml
-
     mail: mailto:effendiian@gmail.com
+    rss-square: rss2.xml
   nav:
     Home: /
     About: /about/
     Blog: /categories/blog/
     Archive: /archives/
-    Projects: http://github.com/rimij405
+    Projects: /projects/
 
 
 ##############################################################################
