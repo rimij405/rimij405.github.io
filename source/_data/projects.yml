@@ -11,14 +11,32 @@
 # All Projects
 
 blog:
-  name: Portfolio & Blog
-  desc: Created with love and Hexo.
-  prompt: Check it out!
-  url: https://rimij405.github.io/
+  name: "Portfolio & Blog"
+  desc: "Created with love and Hexo."
+  prompt: "Check it out!"
+  url: "https://rimij405.github.io/"
   img:
-    src: /images/projects/blog_cover.png
+    src: "/images/projects/blog_cover.png"
     alt: "Personal Blog"
   
+brickhack:
+  name: "BrickHack V: Mood Swing"
+  desc: "Unfinished NodeJS powered RPC API attached to a React client for a mood-tracking application from hackathon."
+  prompt: "Read about it!"
+  url: "/blog/hfoss/brickhack-v/"
+  img:
+    src: "/images/projects/brickhack_cover.jpg"
+    alt: "BrickHack V of 2019"
+
+ggj19:
+  name: "Global Game Jam: Home"
+  desc: "Post-mortem from 2019 game jam session."
+  prompt: "See the notes!"
+  url: "/blog/hfoss/global-game-jam-2019/"
+  img:
+    src: "/images/projects/ggj_cover.png"
+    alt: "Global Game Jam 2019 Submission w/ GJACI Games"
+
 # unique-project-key:
 #   name: "Name of this project."
 #   desc: "Description of the project."
