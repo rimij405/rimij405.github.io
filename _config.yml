@@ -7,7 +7,7 @@
 ##############################################################################
 
 # Site
-title: The Lion's Red Mane
+title: thelionsredmane
 subtitle: Developer, designer, and music producer.
 description: An exploration of thought, code architecture, open source culture, design, development, and more.
 keywords: blog,portfolio,resume,projects,hexo,react,node
@@ -100,7 +100,8 @@ theme_config:
     github: https://github.com/rimij405
     twitter: https://www.twitter.com/az019er
     facebook: https://www.facebook.com/effendiian
-    linkedin: http://linkedin.com/in/effendiian
+    linkedin: https://linkedin.com/in/effendiian
+    instagram: https://instagram.com/thelionsredmane
     mail: mailto:effendiian@gmail.com
     rss-square: rss2.xml
   nav:

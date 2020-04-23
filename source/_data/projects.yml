@@ -1,17 +1,38 @@
 # Project Format 
-# Project:
+# project:
 #   name: Project name.
 #   desc: Project description.
 #   url: URL to Project
+#   prompt: "See more!"
 #   img: Thumbnail. (Optional).
+#     src: Link to image.
+#     alt: Alternate text.
 
 # All Projects
 
 blog:
-  name: Personal Blog
-  desc: My personal website.
+  name: Portfolio & Blog
+  desc: Created with love and Hexo.
+  prompt: Check it out!
   url: https://rimij405.github.io/
   img:
-    src: /images/favicon-192x192.png
+    src: /images/projects/blog_cover.png
     alt: "Personal Blog"
   
+# unique-project-key:
+#   name: "Name of this project."
+#   desc: "Description of the project."
+#   url: "#"
+#   prompt: "See more!"
+#   img: (Optional)
+#     src: "https://via.placeholder.com/500"
+#     alt: "Placeholder text."
+
+# unique-project-key:
+#   name: "Name of this project."
+#   desc: "Description of the project."
+#   url: "#"
+#   prompt: "See more!"
+#   img: (Optional)
+#     src: "https://via.placeholder.com/500"
+#     alt: "Placeholder text."
