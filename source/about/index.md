@@ -1,13 +1,33 @@
 ---
+layout: about
 title: About Me
 date: 2019-01-23 00:10:19
 ---
 
-# About Me #
+## About Me ##
 
-![Image of Ian Effendi.](/images/profile.jpg)
+
+
+
+## Contact Me ##
+
+Want to get in touch? [Send me an email](mailto:effendiian@gmail.com)
+
+
+If you want to get in touch with me, [send me an email](mailto:iae2784@rit.edu).
+
+[GitHub](https://github.com/rimij405)
+[LinkedIn](https://www.linkedin.com/in/effendiian/)
+
+
+
+
+
+
 
 My name is Ian Effendi, an interactive software developer from The Bronx, New York. I am currently finishing up my degree in Game Design and Development at the [School for Interactive Games and Media](https://www.rit.edu/gccis/igm/), a college at the [Rochester Institute of Technology](https://www.rit.edu/).
+
+![Image of Ian Effendi.](/images/profile.jpg)
 
 ## About this Website ##
 
@@ -40,9 +60,3 @@ I find myself revisiting Pope's interpretation of conscious software development
 
 This is what guides my work, and, it's important to talk about!
 
-## Contact Me ##
-
-If you want to get in touch with me, [please send me an email at this address](mailto:iae2784@rit.edu).
-
-[GitHub](https://github.com/rimij405)
-[LinkedIn](https://www.linkedin.com/in/effendiian/)
