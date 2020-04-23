@@ -139,6 +139,15 @@ sitemap:
 licenseType: by
 licenseIconSize: small
 
+# Tag Cloud /* https://github.com/MikeCoder/hexo-tag-cloud */
+tag_cloud:
+  textFont: 'Meslo LG, Verdana, Helvetica'
+  textColor: '#567c77'
+  textHeight: 10
+  outlineColor: '#E2E1D1'
+  maxSpeed: 0.04
+  pauseOnSelected: false
+
 ##############################################################################
 # Deployment
 ##############################################################################
